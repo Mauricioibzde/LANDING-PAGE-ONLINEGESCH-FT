@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2rem 1rem;
+
+    & .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .search-wish-car-shopping {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & input {
+            height: 2rem;
+        }
+    }
+}
