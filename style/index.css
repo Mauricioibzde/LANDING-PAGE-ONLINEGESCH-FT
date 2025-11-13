@@ -1,3 +1,6 @@
+@import url(./var.css);
 @import url(./nav.css);
+@import url(./top-header.css);
 @import url(global.css);
 @import url(./hero.css);
+@import url(hyper-products.css);

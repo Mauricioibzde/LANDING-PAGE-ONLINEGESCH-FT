@@ -1,0 +1,60 @@
+.top-header {
+    height: 3rem;
+       display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+   
+
+   
+}
+
+.top-header-container {
+     background-color: black;
+}
+
+.promotions {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+    & p {
+        color: white;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    & button {
+        background-color: transparent;
+        border: none;
+
+        & a {
+        color: #ffff;
+         border-bottom: 1px solid #ffff;
+        }
+      
+
+    }
+}
+
+.select-language {
+    display: flex;
+    justify-self: end;
+  
+
+    & select {
+       justify-self: end;
+       background-color: transparent;
+       border: none;
+       color: white;
+        & option {
+            background-color: black;
+            color: #ffff;
+
+        }
+      
+
+    }
+    
+}
