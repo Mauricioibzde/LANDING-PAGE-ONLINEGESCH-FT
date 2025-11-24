@@ -1,0 +1,18 @@
+.menu-btn-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    & .card {
+        width: 170px;
+        height: 145px;
+        border: solid 1px var(   --text-secondary);
+    }
+}

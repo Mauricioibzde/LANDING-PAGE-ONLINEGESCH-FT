@@ -9,39 +9,10 @@
     grid-auto-flow: column;
     align-items: end;
 
-    & .buttons-back-next {
-        justify-self: end;
-
-        & button {
-            background-color: #F5F5F5;
-            border: none;
-            cursor: pointer;
-            padding: .5rem;
-            border-radius: 100%;
-        }
-    }
+  
 }
 
-.component-span {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100px;
-    height: 40px;
 
-    & .color {
-        width: 20px;
-        height: 40px;
-        background-color: #DB4444;
-        border-radius: .1rem;
-
-        
-    }
-
-    & span {
-        color: #DB4444;
-    }
-}
 
 
 .day-promotions {
@@ -184,3 +155,4 @@
         top: -2rem;
        
     }
+
