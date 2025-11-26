@@ -1,0 +1,15 @@
+
+.Best-Selling-Products  {
+    display: grid;
+    gap: 1rem;
+}
+
+.best-seling-hi-light {
+   padding-block: 1rem;
+}
+
+.hight-seling {
+ width: 100%;
+    height: 500px;
+    background-color: rgb(61, 61, 61);
+}

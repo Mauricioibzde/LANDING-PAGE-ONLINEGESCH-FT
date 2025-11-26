@@ -25,6 +25,10 @@ li {
        font:  var(--li-font);
 }
 
+p {
+     font:  var(--li-font);
+}
+
 
 
 span {
