@@ -1,8 +1,4 @@
 
-.hyper-products {
-    margin-top: 4rem;
-}
-
 
 .hyper-products-container {
     display: grid;
@@ -15,10 +11,7 @@
 
 
 
-.day-promotions {
-    display: grid;
-    gap: 1rem;
-}
+
 
 
 .time-promotions {
@@ -31,10 +24,7 @@
 
         }
 
-        & strong {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
+    
     }
 }
 

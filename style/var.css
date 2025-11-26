@@ -11,4 +11,16 @@
     --button-01-hover: #E07575;
     --button-02-hover: #A0BCE0;
 
+   /*Fontes*/
+
+  --font-primary: 900 3rem 'Inter', sans-serif;
+  --font-title-section: 700 2rem 'Inter', sans-serif;
+  --font-secondary: 400 1rem 'Kedebideri', sans-serif;
+  --span-font: 700 1rem 'Kedebideri', sans-serif;
+  --strong-font: 900 2.3rem 'Kedebideri', sans-serif;
+   --li-font: 400 1rem 'Kedebideri', sans-serif;
+
+
+
+
 }

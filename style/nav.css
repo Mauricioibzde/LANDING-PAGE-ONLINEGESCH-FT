@@ -35,9 +35,32 @@ nav {
         gap: 2rem;
       
 
-        & input {
-              width: 15rem;
-            height: 2rem;
-        }
+    
+ & input {
+    width:243px;
+    height: 38px;
+    border: none;
+    background-color: var(--secondary);
+    padding-inline: 1rem;
+    border-radius: .3rem;
+ }
+       & input::placeholder {
+  color: #888;
+
+ 
+  opacity: 1; 
+}
+
+
+input[type="search"] {
+  background-image: url('../img/Component 2.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  background-size: 20px; 
+  padding-right: 40px; /
+}
+
+
+
     }
 }

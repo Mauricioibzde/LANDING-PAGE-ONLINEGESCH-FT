@@ -9,9 +9,33 @@
     margin: 0 auto;
 }
 
+h2 {
+    font: var(--font-title-section);
+}
+
 a {
     text-decoration: none;
+    font:  var(--font-secondary);
+   
+   
     
+}
+
+li {
+       font:  var(--li-font);
+}
+
+section {
+    padding-block: 2rem;
+}
+
+span {
+     font:  var(--span-font);
+}
+
+strong {
+     font: var(--strong-font);
+     text-align: center;
 }
 
 
