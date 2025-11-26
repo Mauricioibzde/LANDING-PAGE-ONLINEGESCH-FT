@@ -25,9 +25,7 @@ li {
        font:  var(--li-font);
 }
 
-section {
-    padding-block: 2rem;
-}
+
 
 span {
      font:  var(--span-font);
@@ -36,6 +34,18 @@ span {
 strong {
      font: var(--strong-font);
      text-align: center;
+}
+
+label {
+     font:  var(--label-font);
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
 }
 
 
