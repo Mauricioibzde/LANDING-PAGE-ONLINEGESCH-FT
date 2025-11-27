@@ -8,6 +8,8 @@
     --secondary-2: #DB4444;
     --button-primary: #000000;
     --button-secondary: #DB4444;
+    --button-third: #00FF66;
+    
     --button-01-hover: #E07575;
     --button-02-hover: #A0BCE0;
 
@@ -20,8 +22,6 @@
   --strong-font: 900 2.3rem 'Kedebideri', sans-serif;
    --li-font: 400 1rem 'Kedebideri', sans-serif;
    --label-font: 500 1rem 'Kedebideri', sans-serif;
-
-
 
 
 }
