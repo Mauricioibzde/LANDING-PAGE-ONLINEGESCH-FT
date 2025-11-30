@@ -17,16 +17,26 @@
         justify-self:center;
         align-self: center;
 
-        & .list-of-product-high-light {
-            background-color: black;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+.list-of-product-high-light {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-           
-        }
+.best-seling-img-of-product {
+    display: flex;
+    height: 100%;
+    & img {
+        align-self: center;
+        
+       background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
+       
+
+        
+    }
+}
 
             .select-high-light-couresel {
         display: flex;
