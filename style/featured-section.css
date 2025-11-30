@@ -5,17 +5,62 @@
     gap: 1rem;
 }
 
+   .product-from-new-arrival {
+         background-color: #0c0c0c;
+      }
+
 .aside-right-featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
        grid-template-rows: 1fr 1fr;
 
-    & .product-from-new-arrival {
-  background-color: black;
-  width: 100%;
-       height:100% ; 
+    
+    & div:nth-child(1) {
+     display: grid;
+    grid-column: span 2/3;
+    position: relative;
+   
+    & img {
+        justify-self: end;
     }
+  
+      
+     & div {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+     }
+ 
+    
+      
+       
+    }
+
+      & .product-from-new-arrival:nth-child(2) , .product-from-new-arrival:nth-child(3) {
+        background: #e6e1e1;
+background: #949494;
+background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
+
+         display: grid;
+            justify-content: center;
+            align-items: center;
+   
+       
+      position: relative;
+      
+     & div {
+        position: absolute;
+        top: 6rem;
+        left: 3rem;
+     }
+ 
+    
+      
+       
+    }
+
+ 
 
 
 }
@@ -24,4 +69,30 @@
 
 .best-product-from-new-arrival {
     background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+
+    & div {
+        position: absolute;
+        top: 23rem;
+        left: 3rem;
+    }
 }
+
+
+
+.description-of-the-products-feautered {
+    max-width: 18rem;
+    display: grid;
+    align-items: center;
+    color: white;
+    position: absolute;
+   
+}
+
+
+
+

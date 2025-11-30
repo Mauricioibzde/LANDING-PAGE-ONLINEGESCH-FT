@@ -13,6 +13,10 @@ h2 {
     font: var(--font-title-section);
 }
 
+h3 {
+   font: var(--font-h2-text); 
+}
+
 a {
     text-decoration: none;
     font:  var(--font-secondary);
@@ -50,6 +54,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-block: 1rem;
+}
+
+section {
+    display: grid;
+    gap: 2rem;
 }
 
 

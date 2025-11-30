@@ -23,7 +23,7 @@
         justify-content: center;
         align-items: center;
         padding-block: 2rem;
-        border-bottom: solid 1px var(   --text-secondary);
+       
 
         & button {
             
@@ -69,3 +69,36 @@
         display: grid;
         gap: 1rem;
      }
+
+     .shop-now-btn {
+                color: #ffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(0rem) translateY(4rem);
+                gap:.5rem;
+                position: absolute;
+                
+                
+
+                      background-color: transparent;
+        border: none;
+
+        & a {
+        color: #ffff;
+        border-bottom: 1px solid #ffff;
+        font-size:1.2rem ;
+        }
+                
+                
+            }
+
+
+
+        .btn-green-transform {
+                transform: translateX(-30rem) translateY(5rem);
+        }
+
+           .btn-Shop-now-transform {
+                transform: translateX(-21rem) translateY(5rem);
+        }
