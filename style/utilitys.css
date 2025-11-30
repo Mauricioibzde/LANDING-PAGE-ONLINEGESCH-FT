@@ -63,4 +63,9 @@
         & .btn-green {
               background-color: var(--button-third) !important;
         }
-  
+
+
+     .dooble-carousel {
+        display: grid;
+        gap: 1rem;
+     }

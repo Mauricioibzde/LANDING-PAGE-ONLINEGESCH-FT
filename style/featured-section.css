@@ -1,0 +1,27 @@
+.featured-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    gap: 1rem;
+}
+
+.aside-right-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+       grid-template-rows: 1fr 1fr;
+
+    & .product-from-new-arrival {
+  background-color: black;
+  width: 100%;
+       height:100% ; 
+    }
+
+
+}
+
+
+
+.best-product-from-new-arrival {
+    background-color: black;
+}
