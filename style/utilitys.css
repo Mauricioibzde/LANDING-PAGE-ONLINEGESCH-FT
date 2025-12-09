@@ -75,7 +75,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transform: translateX(0rem) translateY(4rem);
+                transform: translateY(20rem);
                 gap:.5rem;
                 position: absolute;
                 
@@ -94,11 +94,31 @@
             }
 
 
-
-        .btn-green-transform {
+             .btn-featured {
+                color: #ffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:.5rem;
+                position: absolute;
+                transform: translateY(5rem);
                 
-        }
+                
 
-           .btn-Shop-now-transform {
-                transform: translateX(-21rem) translateY(5rem);
+                      background-color: transparent;
+        border: none;
+
+        & a {
+        color: #ffff;
+        border-bottom: 1px solid #ffff;
+        font-size:1.2rem ;
         }
+                
+                
+            }
+
+
+
+
+
+  

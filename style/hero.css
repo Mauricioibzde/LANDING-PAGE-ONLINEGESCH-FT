@@ -16,12 +16,16 @@
     padding-left: 2rem;
         justify-self:center;
         align-self: center;
+        background-color: black;
 
 .list-of-product-high-light {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    
+ display: grid;
+
+ 
+ & img {
+    justify-self: end;
+ }
     
 }
 
@@ -29,9 +33,9 @@
     display: flex;
     height: 100%;
     & img {
-        align-self: center;
         
-       background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
+        
+  
        
 
         
@@ -41,7 +45,7 @@
             .select-high-light-couresel {
         display: flex;
         gap: .5rem;
-           transform: translateX(0) translateY(10rem);
+           transform: translateX(23rem) translateY(23rem);
            position: absolute;
     }
 

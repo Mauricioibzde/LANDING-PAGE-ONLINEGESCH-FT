@@ -1,2 +1,6 @@
-const btn_like_of_product = document.getElementById("")
-const btn_show_product = document.getElementById("")
+
+
+const estacionamento = ["Motor01" , "carro01"]
+
+data = [a , b] = estacionamento
+console.log(data)
