@@ -51,14 +51,19 @@
         padding: .2rem .4rem;
         position: absolute;
         transform: translateY(1rem) translateX(.4rem);
-        
-
         background-color: var(--secondary-2);
         width: 55px;
         border-radius: .2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & span {
+            color: var(--primary);
+        }
+        
+
+     
     }
 
     & .btn-add-to-cart {

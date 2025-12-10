@@ -95,3 +95,23 @@
 
 
 }
+
+
+ .status-color-card-green {
+        padding: .2rem .4rem;
+        position: absolute;
+        transform: translateY(1rem) translateX(.4rem);
+        background-color: var(--green-color);
+        width: 55px;
+        border-radius: .2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+            color: var(--primary);
+        }
+        
+
+     
+    }

@@ -12,38 +12,44 @@ footer {
       margin: 0 auto;
     }
 
-    .footer-section h4 {
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-    }
+
 
     .footer-section p,
     .footer-section a {
       font-size: 0.95rem;
       color: var(--muted);
       text-decoration: none;
-      margin-bottom: 8px;
-      display: block;
+      display: grid;
+      gap: 1rem;
+    }
+    .footer-section {
+        display: grid;
+        gap: 1rem;
     }
 
     .footer-section a:hover {
       color: var(--accent);
     }
 
-    .subscribe-box input {
-      width: 100%;
-      padding: 10px;
-      background: var(--input-bg);
-      border: none;
-      border-radius: var(--radius);
-      color: var(--text);
-      margin-top: 12px;
-    }
+.subscribe-box input {
+  width: 100%;
+  padding: 10px;
+  background: var(--input-bg);
+  border: none;
+  
+  color: var(--text);
+  margin-top: 12px;
+  border: solid 1px var(--primary);
 
-    .download-app img {
-      width: 120px;
-      margin: 8px 0;
-    }
+  background-image: url("../img/icon-send.svg"); 
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  padding-right: 40px; 
+  border-radius: .2rem;
+}
+
+    .subscribe-box
+
 
     .qr-code {
       width: 80px;
@@ -69,9 +75,8 @@ footer {
 
         & .download-store {
             display: grid;
-            & a {
-                
-            }
+            height: 100%;
+          
         }
     }
 

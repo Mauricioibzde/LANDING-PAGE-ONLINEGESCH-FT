@@ -20,6 +20,10 @@ h3 {
    font: var(--font-h2-text); 
 }
 
+h4 {
+    font: var(--font-title-footer);
+}
+
 a {
     text-decoration: none;
     font:  var(--font-secondary);
