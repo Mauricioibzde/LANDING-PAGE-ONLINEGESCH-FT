@@ -1,0 +1,33 @@
+    @media (max-width: 960px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .featured-hero{
+        width: 100%;
+        display: grid;
+       grid-template-columns: 1fr;
+      }
+
+      .category-cards  {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+          .featured-hero{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+
+      }
+
+      .aside-right-featured {
+        display: flex;
+        flex-direction: column;
+
+      }
+    }
