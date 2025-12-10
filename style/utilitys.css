@@ -61,7 +61,15 @@
     
        
         & .btn-green {
-              background-color: var(--button-third) !important;
+            width: 171px;
+            height: 56px;
+              background-color: var(--button-third);
+              
+        border: none;
+        padding: 16px 48px;
+        border-radius: 4px;
+        color: var(--primary);
+        cursor: pointer;
         }
 
 
