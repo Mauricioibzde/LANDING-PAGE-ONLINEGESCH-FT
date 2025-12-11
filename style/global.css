@@ -71,6 +71,12 @@ section {
     gap: 2rem;
 }
 
+.shop-now-btn{
+    & img {
+        width: 2rem;
+    }
+}
+
 
 
 
