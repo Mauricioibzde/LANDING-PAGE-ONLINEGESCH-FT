@@ -7,6 +7,9 @@
         display: grid;
        grid-template-columns: 1fr;
       }
+       .menu {
+            display: none!important;
+        }
 
       .category-cards  {
         justify-content: center;
@@ -14,6 +17,17 @@
     }
 
     @media (max-width: 600px) {
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+       
+
+        .menu-hero {
+            display: none;
+        }
       .footer-grid {
         grid-template-columns: 1fr;
       }
@@ -28,6 +42,64 @@
       .aside-right-featured {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
       }
+
+      .carousel-products {
+        display: flex;
+       overflow-x: auto;
+      }
+
+      header {
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+
+      .products-hight-light {
+       & .select-high-light-couresel {
+      
+       top: 0;
+    }
+}
+
+.search-wish-car-shopping {
+    gap: 1rem!important;
+}
+
+.top-header {
+    align-items: baseline;
+
+    & p {
+        line-height: normal;
+    }
+
+    .select-language {
+        display: block;
+    }
+}
+
+
+.featured-hero {
+ 
+ 
+    gap: 1rem;
+
+    & img {
+      width: 100%;
+        height: 100%;
+
+    }
+}
+
+.btn-featured {
+    & img {
+        width: 2rem;
+    }
+}
     }
