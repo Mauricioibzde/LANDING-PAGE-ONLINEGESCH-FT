@@ -1,4 +1,11 @@
-    @media (max-width: 960px) {
+    @media (max-width: 950px) {
+      .best-product-from-new-arrival {
+    & div {
+        position: absolute;
+        top: 20rem;
+        left: 3rem;
+    }
+}
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -9,6 +16,14 @@
       }
        .menu {
             display: none!important;
+        }
+        
+        .menu-hero-aside {
+            display: none;
+        }
+
+        .hero {
+          display: flex;
         }
 
       .category-cards  {
@@ -25,9 +40,6 @@
 
        
 
-        .menu-hero {
-            display: none;
-        }
       .footer-grid {
         grid-template-columns: 1fr;
       }
@@ -100,6 +112,38 @@
 .btn-featured {
     & img {
         width: 2rem;
+    }
+}
+
+.list-of-product-high-light {
+    
+
+
+ 
+ & img {
+
+    justify-self: end;
+  
+    object-fit: cover;
+ }
+    
+}
+
+.best-product-from-new-arrival {
+    & div {
+        position: absolute;
+        top: 10rem;
+        left: 1rem;
+    }
+}
+
+.aside-right-featured {
+    & div:nth-child(1) ,div:nth-child(2) , div:nth-child(3) {
+        & div {
+            position: absolute;
+            top: 4rem!important;
+            left: 1rem!important;
+        }
     }
 }
     }

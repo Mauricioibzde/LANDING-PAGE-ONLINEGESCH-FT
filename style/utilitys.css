@@ -79,11 +79,12 @@
      }
 
      .shop-now-btn {
+        width: 8rem;
                 color: #ffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transform: translateY(20rem);
+                transform: translateY(-4rem);
                 gap:.5rem;
                 position: absolute;
                 
@@ -95,7 +96,12 @@
         & a {
         color: #ffff;
         border-bottom: 1px solid #ffff;
-        font-size:1.2rem ;
+
+        & img {
+width: 1.2rem;
+        } 
+        
+        
         }
                 
                 
@@ -129,4 +135,5 @@
 
 
 
-  
+
+

@@ -81,7 +81,7 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
 
     & div {
         position: absolute;
-        top: 23rem;
+        top: 24rem;
         left: 3rem;
     }
 }
@@ -93,7 +93,7 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
     display: grid;
     align-items: center;
     color: white;
-    position: absolute;
+  
    
 }
 

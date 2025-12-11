@@ -6,6 +6,9 @@
 
  
 }
+.iphone-img {
+    width: 100%;
+}
 
 
 
@@ -19,18 +22,7 @@
         align-self: center;
         background-color: black;
 
-.list-of-product-high-light {
-    
- display: grid;
 
- 
- & img {
-    justify-self: end;
-  
-    object-fit: cover;
- }
-    
-}
 
 
 
@@ -45,15 +37,13 @@
   
        
 
-        
-    }
+            }
 }
 
             .select-high-light-couresel {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 3rem;
         gap: .5rem;
           
     }
