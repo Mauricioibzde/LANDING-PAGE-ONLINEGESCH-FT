@@ -1,5 +1,11 @@
     @media (max-width: 950px) {
 
+      .list-of-product-high-light-best-seling {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+      }
+
         .iphone-img {
     width: 100%;
 }
@@ -11,9 +17,8 @@
         display: grid;
        grid-template-columns: 1fr;
       }
-       .menu {
-            display: none!important;
-        }
+      
+    
         
         .menu-hero-aside {
             display: none;
@@ -37,10 +42,31 @@
   
       }
 
+      .hight-seling {
+        height: auto;
+      }
+
+      .best-seling-img-of-product {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+        & img{
+          width: 70%!important;
+        }
+
+      }
+
+   
+
    
     }
 
     @media (max-width: 600px) {
+
+      .time-laps-promotion {
+        gap: .2rem!important;
+      }
 
 
 
@@ -90,6 +116,7 @@
 
 
       .products-hight-light {
+        padding: 1rem 1rem;
        & .select-high-light-couresel {
         display: none;
        top: 0;

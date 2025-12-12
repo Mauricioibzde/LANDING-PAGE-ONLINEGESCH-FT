@@ -78,12 +78,13 @@
         overflow: hidden;
         border-radius: 50%;
        
-
+        
 
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            z-index: 1;
              
 
 
@@ -91,6 +92,23 @@
 
 
     }
+
+.linear-gradiente {
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    inset: 0;
+    background: radial-gradient(
+        circle,
+        rgba(2, 226, 103, 0.704) 0%,
+        rgba(0, 255, 34, 0.264) 25%,
+        rgba(255, 255, 255, 0.06) 45%,
+        rgba(0, 0, 0, 0) 80%
+    );
+    filter: blur(120px);
+  
+}
+
 
 
 
@@ -116,3 +134,5 @@
 
      
     }
+
+
