@@ -11,6 +11,14 @@
     margin: 0 auto;
     padding-inline: 1rem;
 }
+
+.container-login {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+    
+}
 h1 {
     font: var(--font-card-text);
 }
