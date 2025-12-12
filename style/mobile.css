@@ -121,7 +121,7 @@
 
 
       .products-hight-light {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
        & .select-high-light-couresel {
         display: none;
        top: 0;
@@ -129,8 +129,16 @@
 }
 
 .search-wish-car-shopping {
+  width: 100%;
+  justify-content: space-between !important;
     gap: 1rem!important;
 }
+
+  .card {
+        width: 150px !important;
+        height: 150px !important;
+        flex-wrap: nowrap !important;
+    }
 
 .top-header {
     align-items: baseline;
@@ -180,6 +188,10 @@
     object-fit: cover;
  }
     
+}
+
+.btn-add-to-cart  {
+  bottom: 6rem !important;
 }
 
 
