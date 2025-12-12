@@ -1,0 +1,10 @@
+.login-hero {
+    display: flex;
+    height: 100%;
+
+    & aside {
+        width: 100%;
+        height: 781px;
+       background-color: rgb(65, 65, 65);
+    }
+}
