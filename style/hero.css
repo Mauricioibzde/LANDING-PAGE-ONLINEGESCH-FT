@@ -6,8 +6,29 @@
 
  
 }
+
+.list-of-product-high-light {
+  display:grid ;
+ 
+    
+}
+
 .iphone-img {
-    width: 100%;
+   width: auto;
+   height: auto;
+   object-fit: cover;
+   justify-self: end;
+}
+
+.logo-iphone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gap-16 {
+    gap: 1rem;
+
 }
 
 
@@ -17,6 +38,7 @@
     height: 100%;
     padding: 2rem;
     position: relative;
+    display: grid;
     
         justify-self:center;
         align-self: center;
@@ -28,7 +50,7 @@
 
 .best-seling-img-of-product {
     display: flex;
-    height: 100%;
+ 
     & img {
         
         width: 100%;
@@ -45,6 +67,7 @@
         justify-content: center;
         position: relative;
         gap: .5rem;
+        align-self: flex-end;
           
     }
 

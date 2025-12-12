@@ -1,10 +1,7 @@
     @media (max-width: 950px) {
-      .best-product-from-new-arrival {
-    & div {
-        position: absolute;
-        top: 20rem;
-        left: 3rem;
-    }
+
+        .iphone-img {
+    width: 100%;
 }
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -29,9 +26,28 @@
       .category-cards  {
         justify-content: center;
       }
+
+      .product-from-new-arrival {
+        display: grid;
+        height: 18rem;
+
+        & > img {
+          align-self: flex-end;
+        }
+  
+      }
+
+   
     }
 
     @media (max-width: 600px) {
+
+
+
+      .gap-16 {
+     bottom: 1rem;
+
+}
 
         nav {
             display: flex;
@@ -75,7 +91,7 @@
 
       .products-hight-light {
        & .select-high-light-couresel {
-      
+        display: none;
        top: 0;
     }
 }
@@ -104,14 +120,19 @@
 
     & img {
       width: 100%;
-        height: 100%;
+      height: auto;
 
     }
 }
 
 .btn-featured {
+  width: 8rem;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 1rem;
     & img {
-        width: 2rem;
+        width: 1.2rem;
+        align-self: center;
     }
 }
 
@@ -129,21 +150,5 @@
     
 }
 
-.best-product-from-new-arrival {
-    & div {
-        position: absolute;
-        top: 10rem;
-        left: 1rem;
-    }
-}
 
-.aside-right-featured {
-    & div:nth-child(1) ,div:nth-child(2) , div:nth-child(3) {
-        & div {
-            position: absolute;
-            top: 4rem!important;
-            left: 1rem!important;
-        }
-    }
 }
-    }

@@ -30,11 +30,7 @@
     }
   
       
-     & div {
-        position: absolute;
-        top: 6rem;
-        left: 3rem;
-     }
+
  
     
       
@@ -53,11 +49,7 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
        
       position: relative;
       
-     & div {
-        position: absolute;
-        top: 6rem;
-        left: 3rem;
-     }
+
  
     
       
@@ -79,13 +71,8 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
     align-items: flex-end;
     height: 100%;
 
-    & div {
-        position: absolute;
-        top: 24rem;
-        left: 3rem;
-    }
+ 
 }
-
 
 
 .description-of-the-products-feautered {
@@ -93,9 +80,11 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
     display: grid;
     align-items: center;
     color: white;
-  
-   
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
 }
+
 
 
 

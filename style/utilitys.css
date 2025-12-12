@@ -111,11 +111,9 @@ width: 1.2rem;
              .btn-featured {
                 color: #ffff;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+               
                 gap:.5rem;
-                position: absolute;
-                transform: translateY(5rem);
+               
                 
                 
 
