@@ -64,6 +64,11 @@
 
     @media (max-width: 600px) {
 
+           .list-of-product-high-light-best-seling {
+        justify-content: center;
+       
+      }
+
       .time-laps-promotion {
         gap: .2rem!important;
       }
