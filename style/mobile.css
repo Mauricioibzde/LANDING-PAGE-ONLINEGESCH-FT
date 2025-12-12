@@ -1,5 +1,9 @@
     @media (max-width: 950px) {
 
+      .container {
+        padding-inline: 1rem !important;
+      }
+
       .list-of-product-high-light-best-seling {
         justify-content: space-between;
         flex-wrap: wrap;
