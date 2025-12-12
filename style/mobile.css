@@ -77,6 +77,7 @@
 
       .gap-16 {
      bottom: 1rem;
+  
 
 }
 
@@ -192,6 +193,15 @@
 
 .btn-add-to-cart  {
   bottom: 6rem !important;
+}
+
+
+.description-of-the-products-feautered {
+
+
+    & > h3 {
+        font-size:  2rem;
+    }
 }
 
 

@@ -83,6 +83,10 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
     position: absolute;
     bottom: 5rem;
     left: 2rem;
+
+    & > h3 {
+        font-size:  3rem;
+    }
 }
 
 
