@@ -1,4 +1,4 @@
-.Best-Selling-Products {
+﻿.Best-Selling-Products {
     display: grid;
     gap: 1rem;
 
@@ -11,9 +11,7 @@
 .hight-seling {
     width: 100%;
     height: 500px;
-    background-color: rgb(61, 61, 61);
-
-
+    background-color: var(--dark-gray);
 
 }
 
@@ -22,9 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
 
-    & .menu {
+& .menu {
         display: grid;
         gap: 2rem;
 
@@ -60,8 +57,7 @@
                     color: var(--text-third);
                     font: var(--strong-font-low);
 
-
-                }
+}
 
                 & p {
                     font: var(--li-font-strong);
@@ -77,21 +73,16 @@
      
         overflow: hidden;
         border-radius: 50%;
-       
-        
 
-        & img {
+& img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             z-index: 1;
-             
 
+}
 
-        }
-
-
-    }
+}
 
 .linear-gradiente {
     width: 20rem;
@@ -109,14 +100,9 @@
   
 }
 
-
-
-
-
 }
 
-
- .status-color-card-green {
+.status-color-card-green {
         padding: .2rem .4rem;
         position: absolute;
         transform: translateY(1rem) translateX(.4rem);
@@ -130,9 +116,8 @@
         & span {
             color: var(--primary);
         }
-        
 
-     
-    }
+}
+
 
 

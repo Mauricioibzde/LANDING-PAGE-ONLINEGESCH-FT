@@ -1,16 +1,12 @@
-.hero {
+﻿.hero {
     display: grid;
     grid-template-columns: 1fr 3fr;
-   
-    
 
- 
 }
 
 .list-of-product-high-light {
   display:grid ;
- 
-    
+
 }
 
 .iphone-img {
@@ -31,8 +27,6 @@
 
 }
 
-
-
 .products-hight-light {
     width: 100%;
     height: 100%;
@@ -42,11 +36,7 @@
     
         justify-self:center;
         align-self: center;
-        background-color: black;
-
-
-
-
+        background-color: var(--bg-dark);
 
 .best-seling-img-of-product {
     display: flex;
@@ -56,11 +46,8 @@
         width: 100%;
       height: 100%;
         object-fit: cover;
-        
-  
-       
 
-            }
+}
 }
 
             .select-high-light-couresel {
@@ -72,14 +59,13 @@
           
     }
 
-    
-    }
+}
 
     .menu-hero{
         display: grid;
         height: 100%;
         gap: .3rem;
-           border-right: 1px solid #3d3d3d95 ;
+           border-right: 1px solid var(--border-light);
            padding-right: 1rem;
 
         &  li {

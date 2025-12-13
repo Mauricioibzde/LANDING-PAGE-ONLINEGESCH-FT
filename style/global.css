@@ -1,15 +1,7 @@
-* {
+﻿* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-inline: 1rem;
 }
 
 .container-login {
@@ -19,28 +11,11 @@
     margin: 0 auto;
     
 }
-h1 {
-    font: var(--font-card-text);
-}
-
-h2 {
-    font: var(--font-title-section);
-}
-
-h3 {
-   font: var(--font-h2-text); 
-}
-
-h4 {
-    font: var(--font-title-footer);
-}
 
 a {
     text-decoration: none;
     font:  var(--font-secondary);
-   
-   
-    
+
 }
 
 li {
@@ -50,8 +25,6 @@ li {
 p {
      font:  var(--li-font);
 }
-
-
 
 span {
      font:  var(--span-font);
@@ -79,16 +52,8 @@ section {
     display: grid;
     gap: 2rem;
 }
-
-.shop-now-btn{
-    & img {
-        width: 2rem;
-    }
-
-
+.btn-featured {
+  padding: 0;
 }
-
-
-
 
 

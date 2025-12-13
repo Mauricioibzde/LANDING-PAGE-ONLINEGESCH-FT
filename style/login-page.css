@@ -1,7 +1,7 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+﻿* { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, sans-serif;
-      background: #ffffff;
+      background: var(--primary);
     }
 
     /* Layout */
@@ -11,18 +11,13 @@
         padding-inline: 1rem;
     }
 
-    nav {
-        max-width: 100%!important;
-        padding-inline: 6rem!important;
-    }
-
-    .image-section {
+.image-section {
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 40px;
-      background-color: #c3e4ea;
+      background-color: var(--bg-image-section);
     }
 
     .image-box {
@@ -30,9 +25,8 @@
       max-width: 600px;
       height: auto;
     }
-      
 
-    .image-box img {
+.image-box img {
       width: 100%;
       max-width: 600px;
       height: auto;
@@ -45,7 +39,7 @@
       align-items: center;
       justify-content: center;
       padding: 40px;
-      padding-inline: 6rem;
+     
     }
 
     .form-card {
@@ -61,7 +55,7 @@
 
     .form-subtitle {
       font-size: 14px;
-      color: #777;
+      color: var(--text-light);
       margin-bottom: 18px;
     }
 
@@ -72,7 +66,7 @@
 
     .form-label {
       font-size: 12px;
-      color: #666;
+      color: var(--text-light);
       margin-bottom: 6px;
       display: block;
     }
@@ -80,7 +74,7 @@
     .form-input {
       width: 100%;
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid var(--border-dark);
       font-size: 14px;
     }
 
@@ -88,11 +82,10 @@
     .btn-submit {
       width: 100%;
       padding: 12px;
-      background: #e04a4a;
-      color: #fff;
+      background: var(--button-secondary);
+      color: var(--text-primary);
       border: none;
       cursor: pointer;
-      margin-top: 6px;
       font-size: 15px;
     }
 
@@ -105,7 +98,7 @@
 
     .btn-google {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ccc;
       background: #fff;
       cursor: pointer;
@@ -127,6 +120,14 @@
       text-decoration: none;
     }
 
+    .long-in-forget-password-btn-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+     
+    }
+
     /* Responsive */
     @media (max-width: 900px) {
       .container {
@@ -136,3 +137,4 @@
         width: 100%;
       }
     }
+

@@ -1,18 +1,11 @@
-
+﻿
 
 .hyper-products-container {
     display: grid;
     grid-auto-flow: column;
     align-items: end;
 
-  
 }
-
-
-
-
-
-
 
 .time-promotions {
     display: flex;
@@ -24,8 +17,7 @@
 
         }
 
-    
-    }
+}
 }
 
 .carousel-products {
@@ -35,16 +27,14 @@
     overflow-x: auto;
 }
 
-
 .card-products {
     width: 16rem;
     height: 21rem;
     padding: .5rem;
     display: grid;
     border-radius: .5rem;
-    
-   
-    justify-content: center;
+
+justify-content: center;
     position: relative;
     background-color: var(--secondary);
     & .status-color-card {
@@ -61,10 +51,8 @@
         & span {
             color: var(--primary);
         }
-        
 
-     
-    }
+}
 
     & .btn-add-to-cart {
      width: 100%;
@@ -80,7 +68,7 @@
         width: 100%;
         height: 100%;
         border: none;
-     background-color: black;
+     background-color: var(--button-primary);
      color: var(--primary);
      cursor: pointer;
      display: flex;
@@ -94,9 +82,8 @@
    .description-card {
          
         align-self: flex-end;
-       
 
-        & h1 {
+& h1 {
             font-size: 1rem;
 
         }
@@ -124,8 +111,7 @@
         right: 1rem;
         top: 1rem;
 
-        
-     & button {
+& button {
       
         border: none;
     
@@ -148,7 +134,8 @@
         align-items: center;
         width: 100%;
         height: 100%;
-       
-       
-    }
+
+}
+
+
 

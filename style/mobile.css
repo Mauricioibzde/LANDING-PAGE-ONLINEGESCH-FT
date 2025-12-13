@@ -1,4 +1,4 @@
-    @media (max-width: 950px) {
+﻿    @media (max-width: 950px) {
 
       .container {
         padding-inline: 1rem !important;
@@ -21,10 +21,8 @@
         display: grid;
        grid-template-columns: 1fr;
       }
-      
-    
-        
-        .menu-hero-aside {
+
+.menu-hero-aside {
             display: none;
         }
 
@@ -61,10 +59,7 @@
 
       }
 
-   
-
-   
-    }
+}
 
     @media (max-width: 600px) {
 
@@ -77,11 +72,8 @@
         gap: .2rem!important;
       }
 
-
-
-      .gap-16 {
+.gap-16 {
      bottom: 1rem;
-  
 
 }
 
@@ -90,9 +82,7 @@
             flex-wrap: wrap;
         }
 
-       
-
-      .footer-grid {
+.footer-grid {
         grid-template-columns: 1fr;
       }
 
@@ -110,12 +100,7 @@
 
       }
 
-      .carousel-products {
-        display: flex;
-       overflow-x: auto;
-      }
-
-      header {
+header {
         flex-wrap: wrap;
       }
 
@@ -124,8 +109,7 @@
         flex-wrap: wrap;
       }
 
-
-      .products-hight-light {
+.products-hight-light {
         padding: 1rem 0;
        & .select-high-light-couresel {
         display: none;
@@ -157,11 +141,9 @@
     }
 }
 
-
 .featured-hero {
- 
- 
-    gap: 1rem;
+
+gap: 1rem;
 
     & img {
       width: 100%;
@@ -182,11 +164,8 @@
 }
 
 .list-of-product-high-light {
-    
 
-
- 
- & img {
+& img {
 
     justify-self: end;
   
@@ -199,14 +178,13 @@
   bottom: 6rem !important;
 }
 
-
 .description-of-the-products-feautered {
 
-
-    & > h3 {
+& > h3 {
         font-size:  2rem;
     }
 }
 
-
 }
+
+

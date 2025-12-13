@@ -1,0 +1,97 @@
+﻿/* refactor.css â€” Consolidation and semantic helpers
+   Purpose: centralize repeated rules, enforce semantic reuse
+   This file intentionally overrides/normalizes existing rules without changing values.
+*/
+
+/* Reset and base */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body { background: var(--background); color: var(--text-third); font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Kedebideri', sans-serif; }
+
+/* Container utility */
+.container { max-width: 1280px; margin: 0 auto; padding-inline: 1rem; }
+
+/* Images */
+img { max-width: 100%; height: auto; display: inline-block; }
+
+/* Headings baseline using defined font vars */
+h1 { font: var(--font-card-text); }
+h2 { font: var(--font-title-section); }
+h3 { font: var(--font-h2-text); }
+
+/* Links */
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Reuse: unify form inputs */
+.form-input,
+.form__input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  height: var(--input-height);
+  padding: 0.5rem 0.75rem;
+  border-radius: calc(var(--radius));
+  border: 1px solid var(--border-dark);
+  font: var(--font-secondary);
+  background: var(--input-bg);
+}
+
+.form-input:focus,
+.form__input:focus,
+input:focus,
+textarea:focus { outline: none; border-color: var(--secondary-2); box-shadow: 0 0 0 3px rgba(219,68,68,0.06); }
+
+/* Buttons: consolidate sizes and states */
+.btn,
+button,
+.form-button,
+.form__button { padding: var(--btn-padding); border-radius: var(--radius); cursor: pointer; font: var(--font-secondary); }
+
+.btn--primary { background: var(--button-primary); color: var(--primary); }
+.btn--secondary { background: var(--button-secondary); color: var(--primary); }
+.btn--outline { background: transparent; border: 1px solid var(--text-third); color: var(--text-third); }
+
+.btn:disabled,
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* Card / container helpers (match cart visuals) */
+.card {
+  background: var(--primary);
+  border-radius: calc(var(--radius));
+}
+
+/* Semantic helpers (small utilities) */
+.u-center { text-align: center; }
+.u-flex { display: flex; }
+.u-align-center { align-items: center; }
+.u-justify-between { justify-content: space-between; }
+
+/* Ensure cart-specific container styling is last-resort and non-destructive */
+.cart-container { box-shadow: none; }
+
+/* Accessibility helpers */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* End of refactor.css */
+
+
+
+/* Links hover */
+a:hover { text-decoration: underline; }
+
+/* Lightbox (product preview) */
+.product-lightbox { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+.product-lightbox__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
+.product-lightbox__panel { position: relative; z-index: 2; background: var(--primary); padding: 1rem; border-radius: calc(var(--radius) * 0.75); max-width: 680px; width: calc(100% - 2rem); box-shadow: 0 10px 30px rgba(0,0,0,0.25); display: flex; gap: 1rem; align-items: center; }
+.product-lightbox__img { max-width: 40%; height: auto; border-radius: calc(var(--radius) * 0.5); }
+.product-lightbox__meta { color: var(--text-third); }
+.product-lightbox__title { margin: 0 0 0.25rem 0; font: var(--font-card-text); }
+.product-lightbox__price { margin: 0; font-weight: 600; }
+.product-lightbox__close { position: absolute; top: 0.25rem; right: 0.25rem; background: transparent; border: none; font-size: 1.25rem; color: var(--text-third); cursor: pointer; }
+
+/* Make .btn-green interactive */
+.btn-green { cursor: pointer; }
+.btn-green:hover { opacity: 0.9; transform: translateY(-2px); }
+

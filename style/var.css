@@ -1,10 +1,19 @@
-:root {
+﻿:root {
+    /* Cores PrimÃ¡rias */
     --background: #FFFFFF;
     --primary: #FFFFFF;
     --secondary: #F5F5F5;
+    --tertiary: #0c0c0c;
+    
+    /* Cores de Texto */
     --text-primary: #FFFFFF;
     --text-secondary: #7D8184;
     --text-third: #000000;
+    --text-muted: #888;
+    --text-light: #777;
+    --text-white: #ffffff;
+    
+    /* Cores de Status e BotÃµes */
     --secondary-2: #DB4444;
     --button-primary: #000000;
     --color-primary: #000000;
@@ -13,25 +22,55 @@
     --button-third: #00FF66;
     --green-color: #00FF66;
     
+    /* Cores de Hover e Estados */
     --button-01-hover: #E07575;
     --button-02-hover: #A0BCE0;
-
-   /*Fontes*/
-
-  --font-primary: 900 3rem 'Inter', sans-serif;
-  --font-title-section: 700 2rem 'Inter', sans-serif;
-  --font-secondary: 400 1rem 'Kedebideri', sans-serif;
-   --font-title-footer: 600 1.3rem 'Kedebideri', sans-serif;
-  --span-font: 700 1rem 'Kedebideri', sans-serif;
-  --strong-font-low: 700 1.5rem 'Kedebideri', sans-serif;
-  --strong-font: 900 2.3rem 'Kedebideri', sans-serif;
-   --li-font: 400 1rem 'Kedebideri', sans-serif;
-   --li-font-strong: 600 1rem 'Kedebideri', sans-serif;
-   --label-font: 500 1rem 'Kedebideri', sans-serif;
+    
+    /* Cores Adicionais */
+    --border-light: #3d3d3d95;
+    --border-gray: #eee;
+    --border-dark: #ccc;
+    --dark-gray: rgb(61, 61, 61);
+    --light-gray: #949494;
+    --input-bg: transparent;
+    --accent: #00FF66;
+    --muted: #888;
+    
+    /* Cores de Fundo Especiais */
+    --bg-image-section: #c3e4ea;
+    --bg-dark: #000000;
+    
+    /* EspaÃ§amentos PadrÃ£o */
+    --gap: 32px;
+    --radius: 4px;
+    --border: 1px solid #000;
+    
+    /* Tipografia */
+    --font-primary: 900 3rem 'Inter', sans-serif;
+    --font-title-section: 700 2rem 'Inter', sans-serif;
+    --font-secondary: 400 1rem 'Kedebideri', sans-serif;
+    --font-title-footer: 600 1.3rem 'Kedebideri', sans-serif;
+    --span-font: 700 1rem 'Kedebideri', sans-serif;
+    --strong-font-low: 700 1.5rem 'Kedebideri', sans-serif;
+    --strong-font: 900 2.3rem 'Kedebideri', sans-serif;
+    --li-font: 400 1rem 'Kedebideri', sans-serif;
+    --li-font-strong: 600 1rem 'Kedebideri', sans-serif;
+    --label-font: 500 1rem 'Kedebideri', sans-serif;
     --font-h2-text: 400 2rem 'Inter', sans-serif;
-     --font-card-text: 600 1rem 'Inter', sans-serif;
-
-
+    --font-card-text: 600 1rem 'Inter', sans-serif;
+    
+    /* Ãcones e Backgrounds */
+    --icon-bg: #000000;
+    
+    /* Cart / Layout specific */
+    --card-outline: #2B88E6; /* azul destacado na imagem */
+    --card-outline-thickness: 3px;
+    --divider-dotted: #2B88E6;
+    --coupon-btn-bg: var(--button-secondary);
+    --coupon-btn-color: var(--primary);
+    --input-height: 44px;
+    --btn-padding: 12px 22px;
 }
+
 
 

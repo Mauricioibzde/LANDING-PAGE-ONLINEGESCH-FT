@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revise seus produtos no carrinho de compras e finalize a compra com seguranÃ§a">
+  <title>Carrinho de Compras - Exclusive Store</title>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+         <header class="top-header-container">
+        <div class="top-header">
+            <div class="select-language">
+            </div>
+            <div class="promotions">
+                <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            </div>
+            <div class="select-language__wrapper">
+                <label for="language-select">Select Language:</label>
+                <select name="language" id="language-select">
+                    <option value="en">English</option>
+                    <option value="de">Germany</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <nav class="container">
+        <div class="nav__logo">
+            <a href="index.html" title="Ir para pÃ¡gina inicial">
+                <img src="img/Logo.svg" alt="Exclusive - Logo da loja">
+            </a>
+        </div>
+        <div class="nav__menu">
+            <a href="./index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="./create-acount.html">Sign in</a>
+        </div>
+        <div class="nav__search-actions">
+            <input type="search" id="search-input" name="search" placeholder="What are you looking for?" aria-label="Buscar produtos">
+            <a href="#wishlist" title="Minha lista de desejos">
+                <img src="img/Wishlist.svg" alt="Wishlist">
+            </a>
+            <a href="#cart" title="Meu carrinho de compras">
+                <img src="img/Cart1 with buy.svg" alt="Shopping cart">
+            </a>
+        </div>
+    </nav>
+   <main class="content container">
+    
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span aria-current="page">Cart</span>
+  </nav>
+
+  <section class="cart" role="region" aria-label="Carrinho de compras">
+    <div class="cart-container">
+    <!-- TABLE -->
+    <table class="cart__table" role="table">
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Subtotal</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="cart__product">
+            <button class="cart__remove-btn" aria-label="Remover produto">Ã—</button>
+            <img src="./img/monitor.svg" alt="">
+            <span>LCD Monitor</span>
+          </td>
+          <td>$650</td>
+          <td>
+            <input type="number" value="1" min="1" aria-label="Quantidade">
+          </td>
+          <td>$650</td>
+        </tr>
+
+        <tr>
+          <td class="cart__product">
+            <button class="cart__remove-btn" aria-label="Remover produto">Ã—</button>
+            <img src="./img/Gamepad.png" alt="">
+            <span>H1 Gamepad</span>
+          </td>
+          <td>$550</td>
+          <td>
+            <input type="number" value="2" min="1" aria-label="Quantidade">
+          </td>
+          <td>$1100</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ACTION BUTTONS -->
+    <div class="cart__actions cart__actions--with-divider">
+      <a href="index.html" class="btn btn--outline">Return To Shop</a>
+      <button class="btn btn--outline">Update Cart</button>
+    </div>
+
+    <!-- BOTTOM AREA -->
+    <div class="cart__bottom">
+
+      <!-- COUPON -->
+      <form class="cart__coupon" method="POST" action="#apply-coupon">
+        <input type="text" placeholder="Coupon Code" name="coupon" aria-label="CÃ³digo do cupom">
+        <button type="submit" class="btn btn--secondary">Apply Coupon</button>
+      </form>
+
+      <!-- TOTAL -->
+      <aside class="cart__summary" role="complementary" aria-label="Resumo do carrinho">
+        <h3>Cart Total</h3>
+
+        <div class="cart__summary-row">
+          <span>Subtotal:</span>
+          <span>$1750</span>
+        </div>
+
+        <div class="cart__summary-row">
+          <span>Shipping:</span>
+          <span>Free</span>
+        </div>
+
+        <div class="cart__summary-row cart__summary-row--total">
+          <span>Total:</span>
+          <span>$1750</span>
+        </div>
+
+        <a href="#checkout" class="btn btn--primary btn--full">Proceed to checkout</a>
+      </aside>
+
+    </div>
+
+    </div> <!-- .cart-container -->
+
+  </section>
+   </main>
+
+       <footer>
+  <div class="footer-grid">
+    <!-- Exclusive -->
+    <div class="footer-section">
+      <h4>Exclusive</h4>
+      <p>Subscribe</p>
+      <p>Get 10% off your first order</p>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email" />
+      </div>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-section">
+      <h4>Support</h4>
+      <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh</p>
+      <p>Email: exclusive@gmail.com</p>
+      <p>Phone: +88015-88888-9999</p>
+    </div>
+
+    <!-- Account -->
+    <div class="footer-section">
+      <h4>Account</h4>
+      <a href="#">My Account</a>
+      <a href="#">Login / Register</a>
+      <a href="#">Cart</a>
+      <a href="#">Wishlist</a>
+      <a href="#">Shop</a>
+    </div>
+
+    <!-- Quick Link -->
+    <div class="footer-section">
+      <h4>Quick Link</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms Of Use</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Download App -->
+    <div class="footer-section download-app">
+      <h4>Download App</h4>
+      <p>Save $3 with App New User Only</p>
+     <div class="app-icons">
+         <img src="./img/Qr Code.svg" alt="QR Code" class="qr-code" />
+      <div class="download-store">
+        <a href=""><img src="./img/android download.svg" alt="Google Play" /></a>
+      <a href=""><img src="./img/download-appstore.svg" alt="App Store" /></a>
+      </div>
+     </div>
+      <div class="social-icons">
+        <a href="#"><img src="./img/Icon-Facebook.svg" alt=""></a>
+         <a href="#"><img src="./img/Icon-Twitter.svg" alt=""></a>
+          <a href="#"><img src="./img/icon-instagram.svg" alt=""></a>
+          <a href="#"><img src="./img/Icon-Linkedin.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+

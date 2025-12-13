@@ -1,0 +1,725 @@
+﻿/* ==========================================
+   BEM LAYOUT - Nomenclatura SemÃ¢ntica
+   ========================================== */
+
+/* HERO SECTION - BEM Structure */
+.hero__categories,
+.menu-hero-aside {
+    display: grid;
+    height: 100%;
+    gap: .3rem;
+    border-right: 1px solid var(--border-light);
+}
+
+.hero__menu,
+.menu-hero {
+    display: grid;
+    height: 100%;
+    gap: .3rem;
+    list-style: none;
+}
+
+.hero__menu li,
+.menu-hero li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .5rem;
+    cursor: pointer;
+}
+
+.hero__menu button,
+.menu-hero button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hero__featured,
+.products-hight-light {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--bg-dark);
+}
+
+.hero__image-wrapper,
+.list-of-product-high-light {
+    display: grid;
+    align-items: center;
+}
+
+.hero__image,
+.iphone-img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    justify-self: end;
+}
+
+.hero__content,
+.description-of-the-products-feautered {
+    display: grid;
+    gap: 1rem;
+}
+
+.hero__subtitle,
+.logo-iphone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero__title {
+    font: var(--font-primary);
+}
+
+.hero__cta-button,
+.btn-featured {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+    width: fit-content;
+}
+
+.hero__cta-button:hover,
+.btn-featured:hover {
+    opacity: 0.8;
+}
+
+.hero__cta-
+
+.hero__carousel-controls,
+.select-high-light-couresel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: .5rem;
+    align-self: flex-end;
+}
+
+/* CATEGORIA SECTION - BEM Structure */
+.category-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.category-cards .card {
+    width: 170px;
+    height: 145px;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--text-secondary);
+    padding: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-cards .card:hover {
+    border-color: var(--secondary-2);
+    transform: translateY(-4px);
+}
+
+.category-cards 
+
+.category-cards .card img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.category-cards .card label {
+    text-align: center;
+    cursor: pointer;
+    font: var(--font-secondary);
+}
+
+/* PRODUCT CARD - BEM Structure */
+.card-products {
+    width: 16rem;
+    height: 21rem;
+    padding: .5rem;
+    display: grid;
+    border-radius: .5rem;
+    justify-content: center;
+    position: relative;
+    background-color: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.card-products__badge,
+.status-color-card {
+    padding: .2rem .4rem;
+    position: absolute;
+    transform: translateY(1rem) translateX(.4rem);
+    background-color: var(--secondary-2);
+    width: 55px;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.card-products__badge span,
+.status-color-card span {
+    color: var(--primary);
+}
+
+.card-products__badge--green,
+.status-color-card-green {
+    background-color: var(--green-color);
+}
+
+.card-products__add-to-cart,
+.btn-add-to-cart {
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-products:hover .card-products__add-to-cart,
+.card-products:hover .btn-add-to-cart {
+    opacity: 1;
+}
+
+.card-products__add-to-cart button,
+.btn-add-to-cart button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--button-primary);
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-products__add-to-cart 
+
+.card-products__description,
+.description-card {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.card-products__title,
+.description-card h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-third);
+    margin-bottom: 0.5rem;
+}
+
+.card-products__price,
+.description-card p {
+    color: var(--secondary-2);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-products__price span {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    margin-left: 0.5rem;
+}
+
+.card-products__rating,
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* FORM ELEMENTS - BEM Structure */
+.form__group {
+    margin-bottom: 14px;
+}
+
+.form__label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 6px;
+    display: block;
+    font: var(--label-font);
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-dark);
+    font-size: 14px;
+    border-radius: 4px;
+    font: var(--font-secondary);
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--secondary-2);
+}
+
+.form__button {
+    width: 100%;
+    padding: 12px;
+    background: var(--button-secondary);
+    color: var(--text-primary);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* FOOTER - BEM Structure */
+.footer__section,
+.footer-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__section h4,
+.footer-section h4 {
+    font: var(--font-title-footer);
+    color: var(--primary);
+}
+
+.footer__section p,
+.footer-section p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.footer__section a,
+.footer-section a {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__section 
+
+/* BUTTONS - BEM Structure */
+.btn,
+.btn-outline,
+.btn-submit,
+.btn-red {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    font: var(--font-secondary);
+}
+
+.btn--primary,
+.btn-submit {
+    background-color: var(--button-primary);
+    color: var(--primary);
+}
+
+.btn--
+
+.btn--secondary,
+.btn-red {
+    background-color: var(--button-secondary);
+    color: var(--primary);
+}
+
+.btn--
+
+.btn--outline,
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--text-third);
+    color: var(--text-third);
+}
+
+.btn--
+
+.btn--green,
+.btn-green {
+    background-color: var(--green-color);
+    color: var(--text-third);
+}
+
+.btn--
+
+/* UTILITY CLASSES */
+.gap-16 {
+    gap: 1rem;
+}
+
+.component-span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.component-span .color {
+    width: 20px;
+    height: 40px;
+    background-color: var(--secondary-2);
+    border-radius: .1rem;
+}
+
+.component-span span {
+    color: var(--secondary-2);
+    font-weight: 600;
+}
+
+/* FORM ELEMENTS - Extended */
+.form-group,
+.form__group {
+    margin-bottom: 14px;
+}
+
+.form-label,
+.form__label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 6px;
+    display: block;
+    font: var(--label-font);
+}
+
+.form-input,
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-dark);
+    font-size: 14px;
+    border-radius: 4px;
+    font: var(--font-secondary);
+}
+
+.form-input:focus,
+.form__input:focus {
+    outline: none;
+    border-color: var(--secondary-2);
+    box-shadow: 0 0 0 3px rgba(219, 68, 68, 0.1);
+}
+
+.form-button,
+.form__button {
+    width: 100%;
+    padding: 12px;
+    background: var(--button-secondary);
+    color: var(--text-primary);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font: var(--font-secondary);
+}
+
+.form-
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-link {
+    background: transparent;
+    border: none;
+    color: var(--text-third);
+    cursor: pointer;
+    text-decoration: underline;
+    font: var(--font-secondary);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.form-divider {
+    text-align: center;
+    margin: 16px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-divider::before,
+.form-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-dark);
+}
+
+.form-login-prompt {
+    text-align: center;
+    margin-top: 1rem;
+    font: var(--font-secondary);
+    color: var(--text-secondary);
+}
+
+.form-login-prompt a {
+    color: var(--secondary-2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.form-login-prompt 
+
+/* CART - BEM Structure */
+.breadcrumb {
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+    font: var(--font-secondary);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb 
+
+.breadcrumb span {
+    color: var(--text-third);
+    font-weight: 600;
+}
+
+.cart {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Container visual do carrinho (borda azul como na referÃªncia) */
+.cart-container {
+    border: var(--card-outline-thickness) solid var(--card-outline);
+    padding: 1.25rem;
+    border-radius: calc(var(--radius) + 2px);
+    background: var(--primary);
+}
+
+/* Separador com estilo pontilhado usado nas Ã¡reas do cart */
+.cart__divider {
+    border-top: 2px dotted var(--divider-dotted);
+    margin: 1rem 0;
+}
+
+.cart__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart__table th {
+    text-align: left;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: var(--text-third);
+    border-bottom: 1px solid var(--border-gray);
+    font: var(--font-secondary);
+}
+
+/* CabeÃ§alho da tabela mais espaÃ§ado e alinhado com referÃªncia */
+.cart__table thead tr th {
+    padding: 18px 12px;
+}
+
+.cart__table td {
+    padding: 25px 0;
+    border-top: 1px solid var(--border-gray);
+    font: var(--font-secondary);
+}
+
+.cart__product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart__product img {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.cart__remove-btn {
+    background: var(--secondary-2);
+    color: var(--primary);
+    border: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.cart__table input[type="number"] {
+    width: 60px;
+    padding: 6px 8px;
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+    text-align: center;
+    font: var(--font-secondary);
+}
+
+.cart__actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* aplica separador pontilhado acima das aÃ§Ãµes (Return / Update) */
+.cart__actions--with-divider {
+    border-top: 1px dotted var(--divider-dotted);
+    padding-top: 1rem;
+}
+
+.cart__actions .btn {
+    min-width: 150px;
+}
+
+.cart__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cart__coupon {
+    gap: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.cart__coupon input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+    font: var(--font-secondary);
+}
+
+.cart__coupon button {
+    padding: var(--btn-padding);
+    white-space: nowrap;
+    background: var(--coupon-btn-bg);
+    color: var(--coupon-btn-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart__coupon 
+
+.cart__summary {
+    border: 1px solid var(--text-third);
+    padding: 25px;
+    min-width: 300px;
+    display: grid;
+    gap: 1rem;
+}
+
+.cart__summary h3 {
+    font: var(--font-title-footer);
+    color: var(--text-third);
+    margin: 0;
+}
+
+.cart__summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-gray);
+    font: var(--font-secondary);
+}
+
+.cart__summary-row--total {
+    font-weight: 700;
+    border-bottom: none;
+    padding-top: 12px;
+    border-top: 1px solid var(--text-third);
+    color: var(--text-third);
+}
+
+.btn--full {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cart__bottom {
+        flex-direction: column;
+    }
+
+    .cart__coupon {
+        flex-direction: column;
+    }
+
+    .cart__coupon input {
+        width: 100%;
+    }
+
+    .cart__summary {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .cart__actions {
+        flex-direction: column;
+    }
+
+    .cart__actions .btn {
+        width: 100%;
+    }
+}
+
+
+/* Hovers restaurados */
+.btn-featured:hover { opacity: 0.8; }
+.category-cards .card:hover { border-color: var(--secondary-2); transform: translateY(-4px); }
+.card-products:hover { transform: translateY(-4px); }
+.btn-add-to-cart button:hover { opacity: 0.8; }
+.btn--primary:hover { opacity: 0.8; }
+.footer-section a:hover { color: var(--text-white); }
+a:hover { text-decoration: underline; }
+
+

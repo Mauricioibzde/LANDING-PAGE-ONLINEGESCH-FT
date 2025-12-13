@@ -1,15 +1,13 @@
-.top-header {
+﻿.top-header {
     height: 3rem;
        display: grid;
     grid-auto-flow: column;
     align-items: center;
-   
 
-   
 }
 
 .top-header-container {
-     background-color: black;
+     background-color: var(--button-primary);
 }
 
 .promotions {
@@ -18,7 +16,7 @@
     align-items: center;
     gap: 1rem;
     & p {
-        color: white;
+        color: var(--text-white);
         text-align: center;
         line-height: 3rem;
         font-size: 0.9rem;
@@ -30,31 +28,29 @@
         border: none;
 
         & a {
-        color: #ffff;
-         border-bottom: 1px solid #ffff;
+        color: var(--text-white);
+         border-bottom: 1px solid var(--text-white);
         }
-      
 
-    }
+}
 }
 
 .select-language {
     display: flex;
     justify-self: end;
-  
 
-    & select {
+& select {
        justify-self: end;
        background-color: transparent;
        border: none;
-       color: white;
+       color: var(--text-white);
         & option {
-            background-color: black;
-            color: #ffff;
+            background-color: var(--button-primary);
+            color: var(--text-white);
 
         }
-      
 
-    }
+}
     
 }
+

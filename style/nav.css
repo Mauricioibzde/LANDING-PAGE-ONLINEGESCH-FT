@@ -1,8 +1,8 @@
-nav {
+﻿nav {
     display: flex;
     justify-content: space-between;
     padding-block: 2rem 1rem;
-    border-bottom: 1px solid #3d3d3d95;
+    border-bottom: 1px solid var(--border-light);
 
     & .logo {
         display: flex;
@@ -18,14 +18,11 @@ nav {
         gap: 1rem;
        & a {
          padding-block: .5rem;
-         color: #242323;
-         border-bottom: solid 1px transparent;
-
+         color: var(--text-third);
+         border-bottom: none;
        }
 
-       & a:hover {
-        border-bottom: solid 1px #242323;
-       }
+       & 
      
     }
 
@@ -34,25 +31,21 @@ nav {
         justify-content: right;
         align-items: center;
         gap: 2rem;
-      
 
-    
- & input {
+& input {
     width:243px;
     height: 38px;
     border: none;
     background-color: var(--secondary);
     padding-inline: 1rem;
     border-radius: .3rem;
-    border: 1px solid rgb(57, 57, 57);
+    border: 1px solid var(--dark-gray);
  }
        & input::placeholder {
-  color: #888;
+  color: var(--text-muted);
 
- 
-  opacity: 1; 
+opacity: 1; 
 }
-
 
 input[type="search"] {
   background-image: url('../img/Component 2.svg');
@@ -62,7 +55,7 @@ input[type="search"] {
   padding-right: 40px; /
 }
 
-
-
-    }
 }
+}
+
+

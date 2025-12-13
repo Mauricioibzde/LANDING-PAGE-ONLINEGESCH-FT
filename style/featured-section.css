@@ -1,4 +1,4 @@
-.featured-hero {
+﻿.featured-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
  
@@ -10,7 +10,7 @@
 }
 
    .product-from-new-arrival {
-         background-color: #0c0c0c;
+         background-color: #0e0d0d;
       }
 
 .aside-right-featured {
@@ -19,8 +19,7 @@
     gap: 1rem;
        grid-template-rows: 1fr 1fr;
 
-    
-    & div:nth-child(1) {
+& div:nth-child(1) {
      display: grid;
     grid-column: span 2/3;
     position: relative;
@@ -28,52 +27,32 @@
     & img {
         justify-self: end;
     }
-  
-      
 
- 
-    
-      
-       
-    }
+}
 
       & .product-from-new-arrival:nth-child(2) , .product-from-new-arrival:nth-child(3) {
-        background: #e6e1e1;
-background: #949494;
-background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
+        background: var(--light-gray);
+background: radial-gradient(circle, rgb(42, 42, 42) 46%, var(--bg-dark) 100%);
 
          display: grid;
             justify-content: center;
             align-items: center;
-   
-       
-      position: relative;
-      
 
- 
-    
-      
-       
-    }
-
- 
-
+position: relative;
 
 }
 
-
+}
 
 .best-product-from-new-arrival {
-    background-color: black;
+    background-color: var(--bg-dark);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 100%;
 
- 
 }
-
 
 .description-of-the-products-feautered {
     max-width: 18rem;
@@ -81,15 +60,13 @@ background: radial-gradient(circle, rgb(42, 42, 42) 46%, rgb(0, 0, 0) 100%);
     align-items: center;
     color: white;
     position: absolute;
-    bottom: 5rem;
+    bottom: 2rem;
     left: 2rem;
 
     & > h3 {
         font-size:  3rem;
     }
 }
-
-
 
 
 
