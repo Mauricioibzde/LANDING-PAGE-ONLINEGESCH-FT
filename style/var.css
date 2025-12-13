@@ -15,7 +15,7 @@
     
     /* Cores de Status e BotÃµes */
     --secondary-2: #DB4444;
-    --button-primary: #000000;
+    --button-primary: #000000b3;
     --color-primary: #000000;
     --color-border: #747576;
     --button-secondary: #DB4444;
@@ -69,8 +69,9 @@
     --coupon-btn-bg: var(--button-secondary);
     --coupon-btn-color: var(--primary);
     --input-height: 44px;
-    --btn-padding: 12px 22px;
+   
 }
+
 
 
 

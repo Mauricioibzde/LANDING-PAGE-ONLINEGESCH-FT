@@ -56,4 +56,18 @@ section {
   padding: 0;
 }
 
+   
+    
+    .btn-add-to-cart-overlay {
+    & button {
+        background-color: var(--secondary-2);
+        border: none;
+        padding: 16px 48px;
+        border-radius: 4px;
+        color: var(--primary);
+        cursor: pointer;
+         z-index: 2;
+    }
+}
+
 

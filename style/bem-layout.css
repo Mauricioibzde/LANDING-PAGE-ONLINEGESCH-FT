@@ -175,6 +175,7 @@
     align-items: center;
     font-size: 0.85rem;
     font-weight: 600;
+    z-index: 2;
 }
 
 .card-products__badge span,
@@ -640,7 +641,7 @@
 }
 
 .cart__coupon button {
-    padding: var(--btn-padding);
+   
     white-space: nowrap;
     background: var(--coupon-btn-bg);
     color: var(--coupon-btn-color);
@@ -715,7 +716,7 @@
 
 /* Hovers restaurados */
 .btn-featured:hover { opacity: 0.8; }
-.category-cards .card:hover { border-color: var(--secondary-2); transform: translateY(-4px); }
+.category-cards .card:hover { background-color: var(--secondary-2); color: white; transform: translateY(-4px); }
 .card-products:hover { transform: translateY(-4px); }
 .btn-add-to-cart button:hover { opacity: 0.8; }
 .btn--primary:hover { opacity: 0.8; }
