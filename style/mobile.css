@@ -78,8 +78,12 @@
 }
 
         nav {
+
             display: flex;
             flex-wrap: wrap;
+          
+            
+            
         }
 
 .footer-grid {
@@ -129,10 +133,6 @@ header {
         height: 150px !important;
         flex-wrap: nowrap !important;
     }
-
-.top-header {
-    align-items: baseline;
-}
 
 .top-header p {
   line-height: normal;

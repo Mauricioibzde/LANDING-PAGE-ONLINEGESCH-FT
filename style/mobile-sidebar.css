@@ -169,23 +169,9 @@ body.sidebar-open {
 }
 
 /* Responsivo */
-@media (max-width: 950px) {
-  .mobile-menu-btn {
-    display: flex !important;
-  }
-  
-  nav .menu {
-    display: none !important;
-  }
-}
-
 @media (max-width: 600px) {
   .mobile-sidebar__content {
     width: 100%;
     max-width: 320px;
-  }
-  
-  nav .search-wish-car-shopping input {
-    display: none;
   }
 }
