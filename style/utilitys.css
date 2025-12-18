@@ -22,12 +22,15 @@
 }
 
 .btn-view-all-the-products-content button {
+    min-height: var(--btn-height);
+    padding: var(--btn-padding-block) var(--btn-padding-inline);
     background-color: var(--secondary-2);
     border: none;
-    padding: 16px 48px;
-    border-radius: 4px;
+    border-radius: var(--btn-radius);
     color: var(--primary);
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .buttons-back-next {
@@ -38,8 +41,9 @@
     background-color: var(--secondary);
     border: none;
     cursor: pointer;
-    padding: .5rem;
+    padding: 0.75rem;
     border-radius: 100%;
+    transition: all 0.3s ease;
 }
 
 .component-categoy {
@@ -49,14 +53,15 @@
 }
 
 .btn-green {
-        width: 171px;
-        height: 56px;
+        min-height: var(--btn-height);
+        padding: var(--btn-padding-block) var(--btn-padding-inline);
         background-color: var(--button-third);
         border: none;
-        padding: 16px 48px;
-        border-radius: 4px;
-        color: var(--primary);
+        border-radius: var(--btn-radius);
+        color: var(--text-third);
         cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
 }
 
 .dooble-carousel {
