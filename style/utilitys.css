@@ -2,112 +2,104 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-
-& .color {
-        width: 20px;
-        height: 40px;
-        background-color: var(--secondary-2);
-        border-radius: .1rem;
-
 }
 
-    & span {
-        color: var(--secondary-2);
-    }
+.component-span .color {
+    width: 20px;
+    height: 40px;
+    background-color: var(--secondary-2);
+    border-radius: .1rem;
 }
-    .btn-view-all-the-products-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-block: 2rem;
 
-& button {
-
-background-color: var( --secondary-2);
-            border: none;
-            padding: 16px 48px;
-            border-radius: 4px;
-            color: var(--primary);
-            cursor: pointer;
-
+.component-span span {
+    color: var(--secondary-2);
 }
-    }
+.btn-view-all-the-products-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+}
 
-       .buttons-back-next {
-        justify-self: end;
+.btn-view-all-the-products-content button {
+    background-color: var(--secondary-2);
+    border: none;
+    padding: 16px 48px;
+    border-radius: 4px;
+    color: var(--primary);
+    cursor: pointer;
+}
 
-        & button {
-            background-color: var(--secondary);
-            border: none;
-            cursor: pointer;
-            padding: .5rem;
-            border-radius: 100%;
-        }
-    }
+.buttons-back-next {
+    justify-self: end;
+}
 
-    .component-categoy {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
+.buttons-back-next button {
+    background-color: var(--secondary);
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 100%;
+}
 
-& .btn-green {
-            width: 171px;
-            height: 56px;
-              background-color: var(--button-third);
-              
+.component-categoy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-green {
+        width: 171px;
+        height: 56px;
+        background-color: var(--button-third);
         border: none;
         padding: 16px 48px;
         border-radius: 4px;
         color: var(--primary);
         cursor: pointer;
-        }
-
-.dooble-carousel {
-        display: grid;
-        gap: 1rem;
-     }
-
-     .shop-now-btn {
-        width: 8rem;
-                color: var(--text-white);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transform: translateY(-4rem);
-                gap:.5rem;
-                position: absolute;
-
-background-color: transparent;
-        border: none;
-
-        & a {
-        color: var(--text-white);
-        border-bottom: 1px solid var(--text-white);
-
-        & img {
-width: 1.2rem;
-        } 
-
 }
 
+.dooble-carousel {
+    display: grid;
+    gap: 1rem;
+}
+
+.shop-now-btn {
+    width: 8rem;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-4rem);
+    gap: .5rem;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+.shop-now-btn a {
+    color: var(--text-white);
+    border-bottom: 1px solid var(--text-white);
+}
+
+.shop-now-btn a img {
+    width: 1.2rem;
 }
 
 .btn-featured {
-                color: var(--text-white);
-                display: flex;
-               
-                gap:.5rem;
+    color: var(--text-white);
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: transparent;
+    border: none;
+    min-height: var(--btn-height);
+    padding: 0;
+}
 
-background-color: transparent;
-        border: none;
-
-        & a {
-        color: var(--text-white);
-       
-        font-size:1.2rem ;
-        }
-
+.btn-featured a {
+    color: var(--text-white);
+    font-size: 1.2rem;
 }
 
 

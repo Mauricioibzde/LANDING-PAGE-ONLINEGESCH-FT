@@ -1,4 +1,4 @@
-﻿    @media (max-width: 950px) {
+﻿  @media (max-width: 950px) {
 
       .container {
         padding-inline: 1rem !important;
@@ -22,11 +22,11 @@
        grid-template-columns: 1fr;
       }
 
-.menu-hero-aside {
+      .menu-hero-aside {
             display: none;
         }
 
-        .hero {
+      .hero {
           display: flex;
         }
 
@@ -37,10 +37,10 @@
       .product-from-new-arrival {
         display: grid;
         height: 18rem;
+      }
 
-        & > img {
+      .product-from-new-arrival > img {
           align-self: flex-end;
-        }
   
       }
 
@@ -53,15 +53,15 @@
         height: auto;
         justify-content: center;
 
-        & img{
-          width: 70%!important;
-        }
+      }
 
+      .best-seling-img-of-product img{
+          width: 70%!important;
       }
 
 }
 
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
 
            .list-of-product-high-light-best-seling {
         justify-content: center;
@@ -111,10 +111,11 @@ header {
 
 .products-hight-light {
         padding: 1rem 0;
-       & .select-high-light-couresel {
-        display: none;
-       top: 0;
-    }
+}
+
+.products-hight-light .select-high-light-couresel {
+  display: none;
+  top: 0;
 }
 
 .search-wish-car-shopping {
@@ -131,25 +132,25 @@ header {
 
 .top-header {
     align-items: baseline;
+}
 
-    & p {
-        line-height: normal;
-    }
+.top-header p {
+  line-height: normal;
+}
 
-    .select-language {
-        display: block;
-    }
+.top-header .select-language {
+  display: block;
 }
 
 .featured-hero {
 
 gap: 1rem;
 
-    & img {
+}
+
+.featured-hero img {
       width: 100%;
       height: auto;
-
-    }
 }
 
 .btn-featured {
@@ -157,19 +158,20 @@ gap: 1rem;
   display: grid;
   grid-auto-flow: column;
   font-size: 1rem;
-    & img {
-        width: 1.2rem;
-        align-self: center;
-    }
+}
+
+.btn-featured img {
+  width: 1.2rem;
+  align-self: center;
 }
 
 .list-of-product-high-light {
 
-& img {
+}
 
-    justify-self: end;
-  
-    object-fit: cover;
+.list-of-product-high-light img {
+  justify-self: end;
+  object-fit: cover;
  }
     
 }
@@ -178,9 +180,10 @@ gap: 1rem;
 
 .description-of-the-products-feautered {
 
-& > h3 {
-        font-size:  2rem;
-    }
+}
+
+.description-of-the-products-feautered > h3 {
+  font-size:  2rem;
 }
 
 }

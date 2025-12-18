@@ -1,61 +1,58 @@
 ﻿nav {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 2rem 1rem;
-    border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
 
-    & .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-block: 1rem;
-    }
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+}
 
-   & .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-       & a {
-         padding-block: .5rem;
-         color: var(--text-third);
-         border-bottom: none;
-       }
+nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 
-       & 
-     
-    }
+nav .menu a {
+  padding-block: .5rem;
+  color: var(--text-third);
+  border-bottom: none;
+}
 
-    .search-wish-car-shopping {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        gap: 2rem;
+nav .search-wish-car-shopping {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+}
 
-& input {
-    width:243px;
-    height: 38px;
-    border: none;
-    background-color: var(--secondary);
-    padding-inline: 1rem;
-    border-radius: .3rem;
-    border: 1px solid var(--dark-gray);
- }
-       & input::placeholder {
+nav .search-wish-car-shopping input {
+  width: 243px;
+  height: 38px;
+  border: none;
+  background-color: var(--secondary);
+  padding-inline: 1rem;
+  border-radius: .3rem;
+  border: 1px solid var(--dark-gray);
+}
+
+nav .search-wish-car-shopping input::placeholder {
   color: var(--text-muted);
-
-opacity: 1; 
+  opacity: 1;
 }
 
 input[type="search"] {
   background-image: url('../img/Component 2.svg');
   background-repeat: no-repeat;
-  background-position: right 10px center; 
-  background-size: 20px; 
-  padding-right: 40px; /
-}
-
-}
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px;
 }
 
 

@@ -97,7 +97,6 @@
     opacity: 0.8;
 }
 
-.hero__cta-
 
 .hero__carousel-controls,
 .select-high-light-couresel {
@@ -135,7 +134,6 @@
     transform: translateY(-4px);
 }
 
-.category-cards 
 
 .category-cards .card img {
     margin: 0 auto;
@@ -221,7 +219,6 @@
     transition: all 0.3s ease;
 }
 
-.card-products__add-to-cart 
 
 .card-products__description,
 .description-card {
@@ -326,18 +323,18 @@
     transition: color 0.3s ease;
 }
 
-.footer__section 
 
 /* BUTTONS - BEM Structure */
 .btn,
 .btn-outline,
 .btn-submit,
 .btn-red {
-    padding: 12px 24px;
+    min-height: var(--btn-height);
+    padding: var(--btn-padding-block) var(--btn-padding-inline);
     border: none;
     cursor: pointer;
     font-weight: 600;
-    border-radius: var(--radius);
+    border-radius: var(--btn-radius);
     transition: all 0.3s ease;
     font: var(--font-secondary);
 }
@@ -348,7 +345,6 @@
     color: var(--primary);
 }
 
-.btn--
 
 .btn--secondary,
 .btn-red {
@@ -356,7 +352,6 @@
     color: var(--primary);
 }
 
-.btn--
 
 .btn--outline,
 .btn-outline {
@@ -365,7 +360,6 @@
     color: var(--text-third);
 }
 
-.btn--
 
 .btn--green,
 .btn-green {
@@ -373,7 +367,6 @@
     color: var(--text-third);
 }
 
-.btn--
 
 /* UTILITY CLASSES */
 .gap-16 {
@@ -427,7 +420,7 @@
 .form__input:focus {
     outline: none;
     border-color: var(--secondary-2);
-    box-shadow: 0 0 0 3px rgba(219, 68, 68, 0.1);
+    box-shadow: var(--focus-ring);
 }
 
 .form-button,

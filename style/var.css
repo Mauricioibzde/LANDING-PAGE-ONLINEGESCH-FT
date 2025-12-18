@@ -69,6 +69,13 @@
     --coupon-btn-bg: var(--button-secondary);
     --coupon-btn-color: var(--primary);
     --input-height: 44px;
+    
+    /* Buttons & Controls */
+    --btn-height: 44px;
+    --btn-padding-inline: 24px;
+    --btn-padding-block: 12px;
+    --btn-radius: var(--radius);
+    --focus-ring: 0 0 0 3px rgba(219, 68, 68, 0.1);
    
 }
 
