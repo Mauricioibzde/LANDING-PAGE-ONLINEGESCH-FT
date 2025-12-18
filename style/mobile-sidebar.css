@@ -1,0 +1,177 @@
+/* ==========================================
+   MOBILE SIDEBAR - Navigation
+   ========================================== */
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s ease;
+}
+
+.mobile-sidebar.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+/* Overlay escuro */
+.mobile-sidebar__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Conteúdo da sidebar */
+.mobile-sidebar__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background-color: var(--primary);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-sidebar.active .mobile-sidebar__content {
+  transform: translateX(0);
+}
+
+/* Header da sidebar */
+.mobile-sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-sidebar__header h2 {
+  font: var(--font-title-section);
+  color: var(--text-third);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.mobile-sidebar__close {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-third);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.mobile-sidebar__close:hover {
+  color: var(--secondary-2);
+}
+
+/* Navegação */
+.mobile-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  flex: 1;
+}
+
+.mobile-sidebar__nav a {
+  padding: 1rem 1.5rem;
+  color: var(--text-third);
+  text-decoration: none;
+  font: var(--font-secondary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.mobile-sidebar__nav a:hover,
+.mobile-sidebar__nav a:focus {
+  background-color: var(--secondary);
+  border-left-color: var(--secondary-2);
+  color: var(--secondary-2);
+}
+
+/* Ações (Wishlist/Cart) */
+.mobile-sidebar__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.mobile-sidebar__action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--secondary);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text-third);
+  font: var(--font-secondary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mobile-sidebar__action:hover {
+  background-color: var(--text-third);
+  color: var(--primary);
+}
+
+.mobile-sidebar__action img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0);
+}
+
+.mobile-sidebar__action:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Previne scroll do body quando sidebar está aberta */
+body.sidebar-open {
+  overflow: hidden;
+}
+
+/* Responsivo */
+@media (max-width: 950px) {
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
+  nav .menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-sidebar__content {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  nav .search-wish-car-shopping input {
+    display: none;
+  }
+}

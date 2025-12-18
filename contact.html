@@ -33,6 +33,14 @@
     <div class="logo">
       <a href="./index.html" title="Home"><img src="img/Logo.svg" alt="logo"></a>
     </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
     <div class="menu">
       <a href="./index.html">Home</a>
       <a href="./contact.html">Contact</a>
@@ -45,6 +53,33 @@
       <a href="./cart.html" title="My shopping cart"><img src="img/Cart1 with buy.svg" alt="Shopping cart"></a>
     </div>
   </nav>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+      <div class="mobile-sidebar__overlay" id="sidebarOverlay"></div>
+      <div class="mobile-sidebar__content">
+          <div class="mobile-sidebar__header">
+              <h2>Menu</h2>
+              <button class="mobile-sidebar__close" id="closeSidebar" aria-label="Close menu">&times;</button>
+          </div>
+          <nav class="mobile-sidebar__nav">
+              <a href="./index.html">Home</a>
+              <a href="./contact.html">Contact</a>
+              <a href="./about.html">About</a>
+              <a href="./login.html">Sign in</a>
+          </nav>
+          <div class="mobile-sidebar__actions">
+              <a href="./wishlist.html" class="mobile-sidebar__action">
+                  <img src="img/Wishlist.svg" alt="Wishlist">
+                  <span>Wishlist</span>
+              </a>
+              <a href="./cart.html" class="mobile-sidebar__action">
+                  <img src="img/Cart1 with buy.svg" alt="Cart">
+                  <span>Cart</span>
+              </a>
+          </div>
+      </div>
+  </div>
 
   <main class="content container">
     <!-- Breadcrumb -->
