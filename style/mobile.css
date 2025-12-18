@@ -165,27 +165,13 @@ gap: 1rem;
   align-self: center;
 }
 
-.list-of-product-high-light {
-
-}
-
 .list-of-product-high-light img {
   justify-self: end;
   object-fit: cover;
- }
-    
-}
-
-
-
-.description-of-the-products-feautered {
-
 }
 
 .description-of-the-products-feautered > h3 {
-  font-size:  2rem;
-}
-
+  font-size: 2rem;
 }
 
 
