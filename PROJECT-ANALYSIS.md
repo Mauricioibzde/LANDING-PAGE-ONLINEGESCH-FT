@@ -29,7 +29,7 @@ LANDING-PAGE-ONLINEGESCH-FT/
 ├── about.html                 # About page (298 lines)
 ├── contact.html               # Contact page (228 lines)
 ├── product-details.html       # Product details (267 lines)
-├── create-acount.html         # Registration (212 lines)
+├── create-account.html        # Registration (212 lines)
 ├── style/                     # CSS modules (22 files)
 ├── script/                    # JavaScript files
 ├── img/                       # Images and icons (54 files)
@@ -436,27 +436,27 @@ Consider adding:
 
 ### High Priority (Do First)
 
-1. ✅ Fix HTML validation errors (empty labels, missing IDs)
-2. ✅ Optimize images (compress SVGs, add lazy loading)
-3. ✅ Add missing SEO meta tags
-4. ✅ Implement carousel functionality
-5. ✅ Add form validation
+1. - [ ] Fix HTML validation errors (empty labels, missing IDs)
+2. - [ ] Optimize images (compress SVGs, add lazy loading)
+3. - [ ] Add missing SEO meta tags
+4. - [ ] Implement carousel functionality
+5. - [ ] Add form validation
 
 ### Medium Priority (Do Next)
 
-6. ✅ Enhance accessibility (WCAG 2.1 AA compliance)
-7. ✅ Add security attributes to external links
-8. ✅ Create 404 error page
-9. ✅ Add build scripts for linting
-10. ✅ Implement lazy loading for images
+6. - [ ] Enhance accessibility (WCAG 2.1 AA compliance)
+7. - [ ] Add security attributes to external links
+8. - [ ] Create 404 error page
+9. - [ ] Add build scripts for linting
+10. - [ ] Implement lazy loading for images
 
 ### Low Priority (Nice to Have)
 
-11. ✅ Add unit tests for JavaScript
-12. ✅ Create component library documentation
-13. ✅ Add animation/transition polish
-14. ✅ Implement dark mode
-15. ✅ Add Progressive Web App features
+11. - [ ] Add unit tests for JavaScript
+12. - [ ] Create component library documentation
+13. - [ ] Add animation/transition polish
+14. - [ ] Implement dark mode
+15. - [ ] Add Progressive Web App features
 
 ---
 
