@@ -25,6 +25,7 @@ module.exports = (env, argv) => ({
         { from: 'login.html', to: '.' },
         { from: 'cart.html', to: '.' },
         { from: 'create-acount.html', to: '.' },
+        { from: 'wishlist.html', to: '.' },
         { from: 'style', to: 'style' },
         { from: 'img', to: 'img' },
       ],
