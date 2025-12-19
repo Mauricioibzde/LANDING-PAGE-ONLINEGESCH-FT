@@ -1,0 +1,190 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 3rem;
+    font-family: 'Inter', 'Kedebideri', sans-serif;
+    color: var(--text-third);
+    background-color: var(--background);
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    font: var(--font-secondary);
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    font: var(--li-font);
+}
+
+p {
+    font: var(--li-font);
+    margin: 0;
+}
+
+span {
+    font: var(--span-font);
+}
+
+strong {
+    font: var(--strong-font);
+    text-align: center;
+}
+
+label {
+    font: var(--label-font);
+}
+
+/* ==========================================
+   FORMS
+   ========================================== */
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    height: var(--input-height);
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-dark);
+    font: var(--font-secondary);
+    background: var(--input-bg);
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--secondary-2);
+    box-shadow: 0 0 0 3px rgba(219, 68, 68, 0.06);
+}
+
+input[type="search"] {
+    background-image: url('../img/Component 2.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+/* ==========================================
+   IMAGES
+   ========================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   CONTAINERS & LAYOUT
+   ========================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+.container-login {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+section {
+    display: grid;
+    gap: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    gap: 1rem;
+}
+
+/* ==========================================
+   UTILITY CLASSES
+   ========================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.u-center {
+    text-align: center;
+}
+
+.u-flex {
+    display: flex;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.u-justify-between {
+    justify-content: space-between;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 950px) {
+    .container {
+        padding-inline: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 3rem;
+    }
+    
+    .container {
+        padding-inline: 0.75rem;
+    }
+}

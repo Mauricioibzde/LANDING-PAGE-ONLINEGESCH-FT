@@ -1,0 +1,411 @@
+/* ==========================================
+   BUTTONS - Componente Único e Consolidado
+   ========================================== */
+
+/* 
+ * Este arquivo consolida TODOS os estilos de botão do projeto
+ * Metodologia: BEM (Block Element Modifier)
+ * Variáveis CSS: definidas em base/variables.css
+ */
+
+/* ==========================================
+   BASE BUTTON - Estilos compartilhados
+   ========================================== */
+
+.btn {
+    min-height: var(--btn-height);
+    padding: var(--btn-padding-block) var(--btn-padding-inline);
+    border: none;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    font-weight: 600;
+    font: var(--font-secondary);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   BUTTON VARIANTS - Modificadores BEM
+   ========================================== */
+
+/* Primary Button - Botão preto padrão */
+.btn--primary {
+    background-color: var(--button-primary);
+    color: var(--primary);
+}
+
+.btn--primary:hover:not(:disabled) {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button - Botão vermelho */
+.btn--secondary {
+    background-color: var(--button-secondary);
+    color: var(--primary);
+}
+
+.btn--secondary:hover:not(:disabled) {
+    background-color: var(--button-01-hover);
+    transform: translateY(-2px);
+}
+
+/* Outline Button - Botão com borda */
+.btn--outline {
+    background-color: transparent;
+    border: 1px solid var(--text-third);
+    color: var(--text-third);
+}
+
+.btn--outline:hover:not(:disabled) {
+    background-color: var(--text-third);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Green Button - Botão verde */
+.btn--green {
+    background-color: var(--green-color);
+    color: var(--text-third);
+}
+
+.btn--green:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   SIZE VARIANTS
+   ========================================== */
+
+.btn--small {
+    min-height: 36px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn--large {
+    min-height: 56px;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.btn--full {
+    width: 100%;
+}
+
+/* ==========================================
+   ICON BUTTONS - Botões circulares
+   ========================================== */
+
+.btn--icon {
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn--icon-sm {
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+}
+
+.btn--icon-lg {
+    width: 48px;
+    height: 48px;
+    min-height: 48px;
+}
+
+/* ==========================================
+   SPECIAL BUTTONS - Casos específicos
+   ========================================== */
+
+/* Remove Button - Botão X vermelho circular */
+.btn--remove {
+    background-color: var(--secondary-2);
+    color: var(--primary);
+    width: 22px;
+    height: 22px;
+    min-height: 22px;
+    padding: 0;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn--remove:hover:not(:disabled) {
+    background-color: var(--button-01-hover);
+    transform: scale(1.2);
+}
+
+/* Navigation Arrows - Botões de navegação circulares */
+.btn--nav {
+    background-color: var(--secondary);
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+.btn--nav:hover:not(:disabled) {
+    background-color: var(--secondary-2);
+    transform: scale(1.1);
+}
+
+/* Featured Button - Botão transparente para hero sections */
+.btn--featured {
+    background-color: transparent;
+    color: var(--text-white);
+    padding: 0;
+    min-height: auto;
+}
+
+.btn--featured:hover:not(:disabled) {
+    opacity: 0.8;
+}
+
+.btn--featured a {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Shop Now Button - Botão com posicionamento especial */
+.btn--shop-now {
+    background-color: transparent;
+    color: var(--text-white);
+    width: 8rem;
+    position: absolute;
+    transform: translateY(-4rem);
+}
+
+.btn--shop-now:hover:not(:disabled) {
+    opacity: 0.8;
+    transform: translateY(-4rem) scale(1.05);
+}
+
+.btn--shop-now a {
+    color: var(--text-white);
+    border-bottom: 1px solid var(--text-white);
+}
+
+/* ==========================================
+   BUTTON CONTAINERS - Wrappers
+   ========================================== */
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-group--center {
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.btn-group--end {
+    justify-content: flex-end;
+}
+
+.btn-group--nav {
+    justify-self: end;
+}
+
+/* ==========================================
+   CARD BUTTONS - Botões específicos de cards
+   ========================================== */
+
+/* Add to Cart Button - Overlay em cards de produto */
+.btn--add-to-cart {
+    width: 100%;
+    background-color: var(--button-primary);
+    color: var(--primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-products:hover .btn--add-to-cart {
+    opacity: 1;
+}
+
+.btn--add-to-cart:hover {
+    opacity: 0.8 !important;
+}
+
+/* Quick Action Buttons - Botões de wishlist/quick view */
+.btn--quick-action {
+    background-color: var(--primary);
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.btn--quick-action:hover:not(:disabled) {
+    background-color: var(--secondary-2);
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   FORM BUTTONS - Botões de formulário
+   ========================================== */
+
+.btn--submit {
+    width: 100%;
+    background-color: var(--button-secondary);
+    color: var(--text-primary);
+}
+
+.btn--submit:hover:not(:disabled) {
+    background-color: var(--button-01-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   MENU BUTTONS - Botões de navegação
+   ========================================== */
+
+.btn--menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.btn--menu:hover:not(:disabled) {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/* Mobile Menu Button - Hamburguer */
+.btn--mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.btn--mobile-menu:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.btn--mobile-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn--mobile-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.btn--mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.btn--mobile-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ==========================================
+   RESPONSIVE OVERRIDES
+   ========================================== */
+
+@media (max-width: 950px) {
+    .btn--mobile-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        min-height: 40px;
+        padding: 0.5rem 1rem;
+    }
+    
+    .btn--large {
+        min-height: 48px;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   LEGACY CLASS SUPPORT (Deprecated)
+   ⚠️ Estas classes serão removidas na v2.0
+   ========================================== */
+
+/* Use .btn--primary instead */
+.btn-submit {
+    background-color: var(--button-primary);
+    color: var(--primary);
+}
+
+/* Use .btn--secondary instead */
+.btn-red {
+    background-color: var(--button-secondary);
+    color: var(--primary);
+}
+
+/* Use .btn--green instead */
+.btn-green {
+    background-color: var(--green-color);
+    color: var(--text-third);
+}
+
+/* Use .btn--outline instead */
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--text-third);
+    color: var(--text-third);
+}
+
+/* Legacy hover states */
+.btn-submit:hover,
+.btn-red:hover {
+    background-color: var(--button-01-hover);
+}
+
+.btn-green:hover {
+    opacity: 0.9;
+}
+
+.btn-outline:hover {
+    background-color: var(--text-third);
+    color: var(--primary);
+}

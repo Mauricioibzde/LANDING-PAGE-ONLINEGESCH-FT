@@ -65,23 +65,22 @@
         display: grid;
         height: 100%;
         gap: .3rem;
-           border-right: 1px solid var(--border-light);
-           padding-right: 1rem;
+        border-right: 1px solid var(--border-light);
+        padding-right: 1rem;
+    }
 
-        &  li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-block: .5rem;
-       
-            cursor: pointer;
+    .menu-hero li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: .5rem;
+        cursor: pointer;
+    }
 
-            & button {
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-            }
-        }
+    .menu-hero li button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
 

@@ -20,68 +20,58 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-& .menu {
-        display: grid;
-        gap: 2rem;
-
-        & span {
-            color: var(--green-color);
-        }
-
-        & h1 {
-            color: var(--primary);
-            font: var(--font-title-section);
-
-        }
-
-        & .time-laps-promotion {
-
-            display: flex;
-            gap: 1rem;
-
-            & li {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                border-radius: 50%;
-
-                text-align: center;
-                width: 5rem;
-                height: 5rem;
-
-                background-color: var(--primary);
-
-                & span {
-                    color: var(--text-third);
-                    font: var(--strong-font-low);
-
 }
 
-                & p {
-                    font: var(--li-font-strong);
-                }
-
-            }
-
-        }
-
-    }
-
-    & .best-seling-img-of-product {
-     
-        overflow: hidden;
-        border-radius: 50%;
-
-& img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-
+.list-of-product-high-light-best-seling .menu {
+    display: grid;
+    gap: 2rem;
 }
 
+.list-of-product-high-light-best-seling .menu span {
+    color: var(--green-color);
+}
+
+.list-of-product-high-light-best-seling .menu h1 {
+    color: var(--primary);
+    font: var(--font-title-section);
+}
+
+.list-of-product-high-light-best-seling .menu .time-laps-promotion {
+    display: flex;
+    gap: 1rem;
+}
+
+.list-of-product-high-light-best-seling .menu .time-laps-promotion li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+}
+
+.list-of-product-high-light-best-seling .menu .time-laps-promotion li span {
+    color: var(--text-third);
+    font: var(--strong-font-low);
+}
+
+.list-of-product-high-light-best-seling .menu .time-laps-promotion li p {
+    font: var(--li-font-strong);
+}
+
+.list-of-product-high-light-best-seling .best-seling-img-of-product {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.list-of-product-high-light-best-seling .best-seling-img-of-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .linear-gradiente {
@@ -113,10 +103,10 @@
         justify-content: center;
         align-items: center;
 
-        & span {
-            color: var(--primary);
-        }
+}
 
+.status-color-card-green span {
+    color: var(--primary);
 }
 
 

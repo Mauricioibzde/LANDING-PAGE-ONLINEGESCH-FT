@@ -1,4 +1,5 @@
-﻿.top-header {
+﻿/* Top header container */
+.top-header {
     height: 3rem;
     width: 100%;
     display: flex;
@@ -18,82 +19,82 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile Menu Button no Top Header */
+/* Mobile Menu Button in Top Header */
 .top-header .mobile-menu-btn {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 30px;
-    height: 25px;
+    height: 22px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
     z-index: 10;
-    justify-self: end;
 }
 
 .top-header .mobile-menu-btn span {
+    display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--text-white);
+    background: var(--text-white);
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
+/* Active (X) state */
 .top-header .mobile-menu-btn.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
-
 .top-header .mobile-menu-btn.active span:nth-child(2) {
     opacity: 0;
 }
-
 .top-header .mobile-menu-btn.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
-.promotions {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    gap: 1rem;
-    & p {
-        color: var(--text-white);
-        text-align: center;
-        line-height: 3rem;
-        font-size: 0.9rem;
-        font-weight: 500;
-    }
-
-    & button {
-        background-color: transparent;
-        border: none;
-
-        & a {
-        color: var(--text-white);
-         border-bottom: 1px solid var(--text-white);
-        }
-
+/* Promotions */
+.promotions p {
+    color: var(--text-white);
+    text-align: center;
+    line-height: 3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
+.promotions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.promotions button a {
+    color: var(--text-white);
+    border-bottom: 1px solid var(--text-white);
+}
+.promotions button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
-.select-language {
-    display: flex;
+/* Language select */
+.select-language select {
     justify-self: end;
-
-& select {
-       justify-self: end;
-       background-color: transparent;
-       border: none;
-       color: var(--text-white);
-        & option {
-            background-color: var(--button-primary);
-            color: var(--text-white);
-
-        }
-
+    background-color: transparent;
+    border: none;
+    color: var(--text-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-    
+.select-language select option {
+    background-color: var(--button-primary);
+    color: var(--text-white);
+}
+.select-language select:hover {
+    opacity: 0.8;
+}
+
+/* Ensure mobile menu button is visible on mobile */
+@media (max-width: 950px) {
+    .top-header .mobile-menu-btn { display: flex !important; }
 }
 

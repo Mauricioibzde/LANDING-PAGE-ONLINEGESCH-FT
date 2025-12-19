@@ -75,4 +75,9 @@ section {
     z-index: 2;
 }
 
+.btn-add-to-cart-overlay button:hover {
+    background-color: var(--button-01-hover);
+    transform: translateY(-2px);
+}
+
 

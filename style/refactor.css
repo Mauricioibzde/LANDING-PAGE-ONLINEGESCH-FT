@@ -47,11 +47,16 @@ textarea:focus { outline: none; border-color: var(--secondary-2); box-shadow: 0 
 .btn,
 button,
 .form-button,
-.form__button { padding: var(--btn-padding); border-radius: var(--radius); cursor: pointer; font: var(--font-secondary); }
+.form__button { padding: var(--btn-padding); border-radius: var(--radius); cursor: pointer; font: var(--font-secondary); transition: all 0.3s ease; }
 
 .btn--primary { background: var(--button-primary); color: var(--primary); }
+.btn--primary:hover { opacity: 0.8; transform: translateY(-2px); }
+
 .btn--secondary { background: var(--button-secondary); color: var(--primary); }
+.btn--secondary:hover { background: var(--button-01-hover); transform: translateY(-2px); }
+
 .btn--outline { background: transparent; border: 1px solid var(--text-third); color: var(--text-third); }
+.btn--outline:hover { background: var(--text-third); color: var(--primary); transform: translateY(-2px); }
 
 .btn:disabled,
 button:disabled { opacity: 0.6; cursor: not-allowed; }

@@ -1,4 +1,4 @@
-﻿nav.container {
+﻿nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--border-light);
   position: relative;
 }
-nav.container .logo {
+nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,42 +14,42 @@ nav.container .logo {
 }
 /* Mobile Menu Button - Removido daqui, agora está no top-header */
 
-nav.container .menu {
+nav .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-nav.container .menu a {
+nav .menu a {
   padding-block: .5rem;
   color: var(--text-third);
   border-bottom: none;
   transition: all 0.3s ease;
 }
 
-nav.container .menu a:hover {
+nav .menu a:hover {
   color: var(--secondary-2);
   text-decoration: underline;
 }
 
-nav.container .search-wish-car-shopping {
+nav .search-wish-car-shopping {
   display: flex;
   justify-content: right;
   align-items: center;
   gap: 2rem;
 }
 
-nav.container .search-wish-car-shopping a {
+nav .search-wish-car-shopping a {
   transition: all 0.3s ease;
 }
 
-nav.container .search-wish-car-shopping a:hover {
+nav .search-wish-car-shopping a:hover {
   opacity: 0.7;
   transform: scale(1.1);
 }
 
-nav.container .search-wish-car-shopping input {
+nav .search-wish-car-shopping input {
   width: 243px;
   height: 38px;
   border: none;
@@ -59,7 +59,7 @@ nav.container .search-wish-car-shopping input {
   border: 1px solid var(--dark-gray);
 }
 
-nav.container .search-wish-car-shopping input::placeholder {
+nav .search-wish-car-shopping input::placeholder {
   color: var(--text-muted);
   opacity: 1;
 }
@@ -77,11 +77,11 @@ input[type="search"] {
   .top-header .mobile-menu-btn {
     display: flex !important;
   }
-  nav.container {
+  nav {
     gap: 1rem;
   }
   
-  nav.container .menu {
+  nav .menu {
     display: none !important;
   }
   
@@ -89,7 +89,7 @@ input[type="search"] {
     display: none !important;
   }
   
-  nav.container .search-wish-car-shopping {
+  nav .search-wish-car-shopping {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -97,18 +97,18 @@ input[type="search"] {
     gap: 1rem;
   }
   
-  nav.container .search-wish-car-shopping input {
+  nav .search-wish-car-shopping input {
     order: 1;
     flex: 1;
     min-width: 0;
   }
   
-  nav.container .search-wish-car-shopping a:nth-of-type(1) {
+  nav .search-wish-car-shopping a:nth-of-type(1) {
     order: 2;
     margin-left: auto;
   }
   
-  nav.container .search-wish-car-shopping a:nth-of-type(2) {
+  nav .search-wish-car-shopping a:nth-of-type(2) {
     order: 3;
   }
 }

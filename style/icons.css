@@ -1,0 +1,34 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: currentColor;
+}
+
+.icon svg,
+.icon use {
+  width: 100%;
+  height: 100%;
+}
+
+/* Sizes */
+.icon--sm { width: 15px; height: 15px; }
+.icon--md { width: 20px; height: 20px; }
+.icon--lg { width: 24px; height: 24px; }
+
+/* Stars default color via token */
+.stars { color: var(--star-color, #FFAD33); }
+.stars .star.empty { color: var(--border-gray); }
+
+/* Card quick actions */
+.btn-show-or-hidden .icon { color: var(--text-third); }
+/* Make heart/eye icons white on hover/focus */
+.btn-show-or-hidden button:hover .icon,
+.btn-show-or-hidden button:focus-visible .icon { color: var(--text-white); }
+
+/* Fallback for <img> based icons */
+.btn-show-or-hidden button img { transition: filter 0.2s ease; }
+.btn-show-or-hidden button:hover img,
+.btn-show-or-hidden button:focus-visible img {
+  filter: brightness(0) saturate(100%) invert(100%);
+}

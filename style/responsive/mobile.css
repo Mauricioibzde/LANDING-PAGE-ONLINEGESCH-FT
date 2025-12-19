@@ -1,0 +1,177 @@
+﻿  @media (max-width: 950px) {
+
+      .container {
+        padding-inline: 1rem !important;
+      }
+
+      .list-of-product-high-light-best-seling {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+      }
+
+        .iphone-img {
+    width: 100%;
+}
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .featured-hero{
+        width: 100%;
+        display: grid;
+       grid-template-columns: 1fr;
+      }
+
+      .menu-hero-aside {
+            display: none;
+        }
+
+      .hero {
+          display: flex;
+        }
+
+      .category-cards  {
+        justify-content: center;
+      }
+
+      .product-from-new-arrival {
+        display: grid;
+        height: 18rem;
+      }
+
+      .product-from-new-arrival > img {
+          align-self: flex-end;
+  
+      }
+
+      .hight-seling {
+        height: auto;
+      }
+
+      .best-seling-img-of-product {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+      }
+
+      .best-seling-img-of-product img{
+          width: 70%!important;
+      }
+
+}
+
+@media (max-width: 600px) {
+
+           .list-of-product-high-light-best-seling {
+        justify-content: center;
+       
+      }
+
+      .time-laps-promotion {
+        gap: .2rem!important;
+      }
+
+.gap-16 {
+     bottom: 1rem;
+
+}
+
+        nav {
+
+            display: flex;
+            flex-wrap: wrap;
+          
+            
+            
+        }
+
+.footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+          .featured-hero{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+
+      }
+
+      .aside-right-featured {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+      }
+
+header {
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+.products-hight-light {
+        padding: 1rem 0;
+}
+
+.products-hight-light .select-high-light-couresel {
+  display: none;
+  top: 0;
+}
+
+.search-wish-car-shopping {
+  width: 100%;
+  justify-content: space-between !important;
+    gap: 1rem!important;
+}
+
+  .card {
+        width: 150px !important;
+        height: 150px !important;
+        flex-wrap: nowrap !important;
+    }
+
+.top-header p {
+  line-height: normal;
+}
+
+.top-header .select-language {
+  display: block;
+}
+
+.featured-hero {
+
+gap: 1rem;
+
+}
+
+.featured-hero img {
+      width: 100%;
+      height: auto;
+}
+
+.btn-featured {
+  width: 8rem;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 1rem;
+}
+
+.btn-featured img {
+  width: 1.2rem;
+  align-self: center;
+}
+
+.list-of-product-high-light img {
+  justify-self: end;
+  object-fit: cover;
+}
+
+.description-of-the-products-feautered > h3 {
+  font-size: 2rem;
+}
+
+

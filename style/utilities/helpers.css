@@ -1,0 +1,77 @@
+/* ==========================================
+   UTILITIES - Classes auxiliares
+   ========================================== */
+
+/* ==========================================
+   SPACING UTILITIES
+   ========================================== */
+
+.gap-8 {
+    gap: 0.5rem;
+}
+
+.gap-16 {
+    gap: 1rem;
+}
+
+.gap-24 {
+    gap: 1.5rem;
+}
+
+.gap-32 {
+    gap: 2rem;
+}
+
+/* ==========================================
+   COMPONENT UTILITIES
+   ========================================== */
+
+/* Red bar indicator */
+.component-span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.component-span .color {
+    width: 20px;
+    height: 40px;
+    background-color: var(--secondary-2);
+    border-radius: 0.1rem;
+}
+
+.component-span span {
+    color: var(--secondary-2);
+}
+
+/* Category indicator */
+.component-category {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ==========================================
+   LAYOUT UTILITIES
+   ========================================== */
+
+.double-carousel {
+    display: grid;
+    gap: 1rem;
+}
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}

@@ -1,0 +1,115 @@
+﻿.top-header {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.top-header-container {
+    background-color: var(--bg-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu Button no Top Header */
+.top-header .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    }
+
+    .promotions p {
+        color: var(--text-white);
+        text-align: center;
+        line-height: 3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .promotions button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .promotions button a {
+        color: var(--text-white);
+        border-bottom: 1px solid var(--text-white);
+    }
+
+    .promotions button:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+.top-header .mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.promotions {
+    }
+
+    .select-language select {
+        justify-self: end;
+        background-color: transparent;
+        border: none;
+        color: var(--text-white);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .select-language select option {
+        background-color: var(--button-primary);
+        color: var(--text-white);
+    }
+
+    .select-language select:hover {
+        opacity: 0.8;
+    }
+}
+
+    & button:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+.select-language {
+    display: flex;
+    justify-self: end;
+
+& select {
+       justify-self: end;
+       background-color: transparent;
+       border: none;
+       color: var(--text-white);
+       cursor: pointer;
+       transition: all 0.3s ease;
+        & option {
+            background-color: var(--button-primary);
+            color: var(--text-white);
+
+        }
+}
+
+& select:hover {
+       opacity: 0.8;
+}
+
+}
+    
+}
+
